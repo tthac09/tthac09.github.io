@@ -4,7 +4,8 @@
   <!-- 元数据 -->
   <meta charset="utf-8">
   <link rel="icon" href="/images/logo.webp">
-  <title>tthac09's blog</title>
+  
+  <title>tthac09&#39;s blog</title>
   <meta name="author" content="tthac09" />
   <meta http-equiv="Cache-Control" content="no-transform" />
   <meta http-equiv="Cache-Control" content="no-siteapp" />
@@ -24,7 +25,6 @@
 <meta property="article:author" content="tthac09">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://tthac09.github.io/images/logo.webp">
-<meta name="twitter:site" content="@null">
   
   <!-- 站点验证相关 -->
   
@@ -33,27 +33,28 @@
     
   
   <!-- 样式表文件 -->
-  <link rel="stylesheet" id="kratos-css" href="/css/kratosr.min.css" type="text/css" media="all">
+  <link rel="stylesheet" id="kratos-css" href="/css/kratosr.min.css" media="all"></script>
   
-    <link rel="stylesheet" id="highlight-css" href="/css/highlight/night-eighties.min.css" type="text/css" media="all">
-  
-  
-  <link rel="stylesheet" id="fontawe-css" href="https://unpkg.com/font-awesome@4.7.0/css/font-awesome.min.css" type="text/css" media="all">
-  <link rel="stylesheet" id="nprogress-css" href="https://unpkg.com/nprogress@0.2.0/nprogress.css" type="text/css" media="all">
+    <link rel="stylesheet" id="darkmode-css" href="/css/kr-color-dark.min.css" media="(prefers-color-scheme: dark)"></script>
+    <script src="/js/kr-dark.min.js"></script>
   
   
-    <link rel="stylesheet" href="https://unpkg.com/aplayer@1.10.1/dist/APlayer.min.css">
+    <link rel="stylesheet" id="highlight-css" href="/css/highlight/night-eighties.min.css" media="all"></script>
   
   
-    <link rel="stylesheet" href="https://unpkg.com/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+  <link rel="stylesheet" id="fontawe-css" href="/vendors/font-awesome@4.7.0/css/font-awesome.min.css" media="all"></script>
+  <link rel="stylesheet" id="nprogress-css" href="/vendors/nprogress@0.2.0/nprogress.css" media="all"></script>
   
   
-    <link rel="stylesheet" id="darkmode-css" href="/css/kr-dark.min.css" type="text/css" media="all">
+    <link rel="stylesheet" href="/vendors/aplayer@1.10.1/dist/APlayer.min.css"></script>
+  
+  
+    <link rel="stylesheet" href="/vendors/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"></script>
   
   <!-- 不得不预先加载的一些JS文件 -->
-  <script src="https://unpkg.com/jquery@3.6.0/dist/jquery.min.js"></script>
+  <script src="/vendors/jquery@3.6.0/dist/jquery.min.js"></script>
   
-    <script src="https://unpkg.com/qrcode_js@1.0.0/qrcode.min.js"></script>
+    <script src="/vendors/qrcode_js@1.0.0/qrcode.min.js"></script>
   
   
   <style>
@@ -85,56 +86,107 @@
                             <ul id="kratos-primary-menu" class="sf-menu">
                                 
                                     
-                                        <li><a href="/"><i class="fa fa-home"></i>首页</a></li>
-                                    
-                                
-                                    
-                                        <li><a href="/archives/"><i class="fa fa-file"></i>档案馆</a></li>
-                                    
-                                
-                                    
-                                        <li><a href="/friends/"><i class="fa fa-paw"></i>好伙伴</a></li>
-                                    
-                                
-                                    
                                         <li>
-                                            <a><i class="fa fa-paper-plane"></i>关于</a>
-                                            <ul class="sub-menu">
+                                            
+                                                <a href="/">
+                                            
                                                 
-                                                    
+                                                    <i class="fa fa-home"></i>
                                                 
-                                                    
-                                                        <li><a href="/about/blog/">关于博客</a></li>
-                                                    
-                                                
-                                                    
-                                                        <li><a href="/about/comment/">评论指南与隐私指引</a></li>
-                                                    
-                                                
-                                                    
-                                                        <li><a href="/about/rights/">版权与其他权利</a></li>
-                                                    
-                                                
-                                            </ul>
+                                                首页
+                                            </a>
+                                            
                                         </li>
                                     
-                                
+                                        <li>
+                                            
+                                                <a href="/archives/">
+                                            
+                                                
+                                                    <i class="fa fa-file"></i>
+                                                
+                                                档案馆
+                                            </a>
+                                            
+                                        </li>
                                     
                                         <li>
-                                            <a><i class="fa fa-link"></i>链接</a>
-                                            <ul class="sub-menu">
+                                            
+                                                <a href="/friends/">
+                                            
                                                 
-                                                    
+                                                    <i class="fa fa-paw"></i>
                                                 
-                                                    
-                                                        <li><a target="_blank" rel="noopener" href="https://candinya.com">作者博客</a></li>
-                                                    
+                                                好伙伴
+                                            </a>
+                                            
+                                        </li>
+                                    
+                                        <li>
+                                            
+                                                <a>
+                                            
                                                 
-                                                    
-                                                        <li><a target="_blank" rel="noopener" href="https://github.com/Candinya/Kratos-Rebirth">项目链接</a></li>
-                                                    
+                                                    <i class="fa fa-paper-plane"></i>
                                                 
-                                            </ul>
+                                                关于
+                                            </a>
+                                            
+                                                <ul class="sub-menu">
+                                                    
+                                                        <li>
+                                                            <a href="/about/blog/">
+                                                                
+                                                                关于博客
+                                                            </a>
+                                                        </li>
+                                                    
+                                                        <li>
+                                                            <a href="/about/comment/">
+                                                                
+                                                                评论指南与隐私指引
+                                                            </a>
+                                                        </li>
+                                                    
+                                                        <li>
+                                                            <a href="/about/rights/">
+                                                                
+                                                                版权与其他权利
+                                                            </a>
+                                                        </li>
+                                                    
+                                                </ul>
+                                            
+                                        </li>
+                                    
+                                        <li>
+                                            
+                                                <a>
+                                            
+                                                
+                                                    <i class="fa fa-link"></i>
+                                                
+                                                链接
+                                            </a>
+                                            
+                                                <ul class="sub-menu">
+                                                    
+                                                        <li>
+                                                            <a target="_blank" rel="noopener" href="https://candinya.com">
+                                                                
+                                                                作者博客
+                                                            </a>
+                                                        </li>
+                                                    
+                                                        <li>
+                                                            <a target="_blank" rel="noopener" href="https://github.com/Candinya/Kratos-Rebirth">
+                                                                
+                                                                项目链接
+                                                            </a>
+                                                        </li>
+                                                    
+                                                </ul>
+                                            
                                         </li>
                                     
                                 
@@ -181,9 +233,10 @@
 
 
 
+
     
     
-        <article class="kratos-hentry clearfix">
+        <article class="kratos-hentry clearfix" itemscope itemtype="https://schema.org/Article">
             <div class="kratos-entry-border-new clearfix">
                 
                     <div class="pin-top wrapper">
@@ -193,17 +246,17 @@
                 <div class="kratos-entry-thumb-new">
                     <a href="/2020/03/11/noi-online-notes/">
                         
-                            <img class="kratos-entry-thumb-new-img">
+                            <img class="kratos-entry-thumb-new-img" alt="">
                         
                     </a>
                 </div>
                 <div class="kratos-post-inner-new">
                     <header class="kratos-entry-header-new">
                             <a class="label-link" href="/categories/%E6%9D%82%E8%AE%B0/">杂记</a>
-                        <h2 class="kratos-entry-title-new"><a href="/2020/03/11/noi-online-notes/">NOI Online游记（？？？）</a>
+                        <h2 class="kratos-entry-title-new"><a href="/2020/03/11/noi-online-notes/" itemprop="mainEntityOfPage"><span itemprop="name headline">NOI Online游记（？？？）</span></a>
                     </header>
                     <div class="kratos-entry-content-new">
-                        <p>
+                        <p itemProp="description">
                             
                                 前言不知道算不算游记，毕竟也没出门。
 那天打开Wetchat，打算听sj的无聊数学课，看见吸金f的公号推了一个报名通知，定睛一看，没听过，再一看，居然免费！！！免费！！！免费！！！于是果断报了名。便宜不占白不占！！！    （就知道吸...
@@ -213,10 +266,9 @@
                 </div>
                 <footer class="kratos-post-meta-new">
                     <span class="pull-left">
-                        <a>
-                            <i class="fa fa-calendar"></i>
-                            2020-03-11
-                        </a>
+                        <time datetime="2020-03-10T16:00:00.000Z" itemprop="datePublished">
+                            <a><i class="fa fa-calendar"></i> 2020-03-11</a>
+                        </time>
                         <a>
                             
                                 <i class="fa fa-tags"></i>
@@ -252,7 +304,7 @@
 
     
     
-        <article class="kratos-hentry clearfix">
+        <article class="kratos-hentry clearfix" itemscope itemtype="https://schema.org/Article">
             <div class="kratos-entry-border-new clearfix">
                 
                     <div class="pin-top wrapper">
@@ -262,17 +314,17 @@
                 <div class="kratos-entry-thumb-new">
                     <a href="/2019/11/17/csp2019-notes/">
                         
-                            <img class="kratos-entry-thumb-new-img">
+                            <img class="kratos-entry-thumb-new-img" alt="">
                         
                     </a>
                 </div>
                 <div class="kratos-post-inner-new">
                     <header class="kratos-entry-header-new">
                             <a class="label-link" href="/categories/%E6%9D%82%E8%AE%B0/">杂记</a>
-                        <h2 class="kratos-entry-title-new"><a href="/2019/11/17/csp2019-notes/">CSP2019滚粗记</a>
+                        <h2 class="kratos-entry-title-new"><a href="/2019/11/17/csp2019-notes/" itemprop="mainEntityOfPage"><span itemprop="name headline">CSP2019滚粗记</span></a>
                     </header>
                     <div class="kratos-entry-content-new">
-                        <p>
+                        <p itemProp="description">
                             
                                                                  作于2019/11/17夜
 前言の前言震惊！！！kkk竟然将本游记收录在了入门组or both里面，怪我标题没写清楚。。。
@@ -283,10 +335,9 @@
                 </div>
                 <footer class="kratos-post-meta-new">
                     <span class="pull-left">
-                        <a>
-                            <i class="fa fa-calendar"></i>
-                            2019-11-17
-                        </a>
+                        <time datetime="2019-11-16T16:00:00.000Z" itemprop="datePublished">
+                            <a><i class="fa fa-calendar"></i> 2019-11-17</a>
+                        </time>
                         <a>
                             
                                 <i class="fa fa-tags"></i>
@@ -322,7 +373,7 @@
 
     
     
-        <article class="kratos-hentry clearfix">
+        <article class="kratos-hentry clearfix" itemscope itemtype="https://schema.org/Article">
             <div class="kratos-entry-border-new clearfix">
                 
                     <div class="pin-top wrapper">
@@ -332,17 +383,17 @@
                 <div class="kratos-entry-thumb-new">
                     <a href="/2019/01/25/noip2018-notes/">
                         
-                            <img class="kratos-entry-thumb-new-img">
+                            <img class="kratos-entry-thumb-new-img" alt="">
                         
                     </a>
                 </div>
                 <div class="kratos-post-inner-new">
                     <header class="kratos-entry-header-new">
                             <a class="label-link" href="/categories/%E6%9D%82%E8%AE%B0/">杂记</a>
-                        <h2 class="kratos-entry-title-new"><a href="/2019/01/25/noip2018-notes/">Noip2018杂记</a>
+                        <h2 class="kratos-entry-title-new"><a href="/2019/01/25/noip2018-notes/" itemprop="mainEntityOfPage"><span itemprop="name headline">Noip2018杂记</span></a>
                     </header>
                     <div class="kratos-entry-content-new">
-                        <p>
+                        <p itemProp="description">
                             
                                 - Day —？？—？？初赛不说什么，狠可爱！！特别是抽奖机那条，仿佛可以推广到男女比例永远平衡。我是不是学了个假地理？
 - Day —？？一个人孤独滴进了复赛
@@ -353,10 +404,9 @@
                 </div>
                 <footer class="kratos-post-meta-new">
                     <span class="pull-left">
-                        <a>
-                            <i class="fa fa-calendar"></i>
-                            2019-01-25
-                        </a>
+                        <time datetime="2019-01-24T16:00:00.000Z" itemprop="datePublished">
+                            <a><i class="fa fa-calendar"></i> 2019-01-25</a>
+                        </time>
                         <a>
                             
                                 <i class="fa fa-tags"></i>
@@ -405,20 +455,14 @@
             <div id="w-comments" class="post-comments"></div>
 <script>
     var load_comm = () => {
-        const locale = {
-            mail: '邮箱（选填）',
-            link: '个人网址（选填）',
-            placeholder: '说说点什么喵～o(=•ェ•=)  无需登录也完全没问题哦～  您的评论可能需经审核后展示,请勿重复提交  填写邮箱后可以收到回复提醒呢 评论请参阅“关于-评论指南与隐私指引”'
-        };
         const init = () => {
             new Waline(Object.assign({
                 el: '#w-comments',
-                path: '/page/2/index.html',
-                locale
+                path: '/page/2/index.html'
             }, JSON.parse('{"serverURL":"https://blog-wa-com.vercel.app/","visitor":true}')));
         }
         if (typeof Waline === 'undefined') {
-            const src = 'https://unpkg.com/@waline/client@1/dist/Waline.min.js';
+            const src = '/vendors/@waline/client@1.6.0/dist/Waline.min.js';
             $.getScript(src, init);
         } else {
             init();
@@ -451,7 +495,7 @@
     <div class="photo-background"></div>
     <div class="photo-wrapper clearfix">
         <div class="photo-wrapper-tip text-center">
-            <img class="about-photo" src="/images/logo.webp" />
+            <img class="about-photo" src="/images/avatar.webp" loading="lazy" decoding="auto" />
         </div>
     </div>
     <div class="textwidget">
@@ -630,8 +674,8 @@
 </div>
 </div>
 
-        <script defer src="https://unpkg.com/bootstrap@3.3.4/dist/js/bootstrap.min.js"></script>
-<script defer src="https://unpkg.com/nprogress@0.2.0/nprogress.js"></script>
+        <script defer src="/vendors/bootstrap@3.3.4/dist/js/bootstrap.min.js"></script>
+<script defer src="/vendors/nprogress@0.2.0/nprogress.js"></script>
 <script>
     if (!window.kr) {
         window.kr = {};
@@ -640,19 +684,14 @@
     window.kr.siteRoot = "/";
 </script>
 
-    <div>
-        <canvas id="snow"></canvas>
-        <script async type="text/javascript" src="/js/snow.min.js"></script>
-    </div>
-
 
     <script async src="/js/candy.min.js"></script>
 
 
 
-    <script defer src="https://unpkg.com/aplayer@1.10.1/dist/APlayer.min.js"></script>
+    <script defer src="/vendors/aplayer@1.10.1/dist/APlayer.min.js"></script>
     
-    <script defer src="https://unpkg.com/meting@2/dist/Meting.min.js"></script>
+    <script defer src="/vendors/meting@2.0.1/dist/Meting.min.js"></script>
     <meting-js
         server="tencent"
         type="playlist"
@@ -664,14 +703,11 @@
 
 
 
-    <script defer src="https://unpkg.com/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script defer src="/vendors/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 
-<script defer src="https://unpkg.com/clipboard@2.0.6/dist/clipboard.min.js"></script>
+<script defer src="/vendors/clipboard@2.0.6/dist/clipboard.min.js"></script>
 <script defer src="/js/kratosr.min.js"></script>
 <script defer src="/js/pjax.min.js"></script>
-
-
-    <script defer src="/js/kr-dark.min.js"></script>
 
 
 

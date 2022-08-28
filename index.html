@@ -4,7 +4,8 @@
   <!-- 元数据 -->
   <meta charset="utf-8">
   <link rel="icon" href="/images/logo.webp">
-  <title>tthac09's blog</title>
+  
+  <title>tthac09&#39;s blog</title>
   <meta name="author" content="tthac09" />
   <meta http-equiv="Cache-Control" content="no-transform" />
   <meta http-equiv="Cache-Control" content="no-siteapp" />
@@ -24,7 +25,6 @@
 <meta property="article:author" content="tthac09">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://tthac09.github.io/images/logo.webp">
-<meta name="twitter:site" content="@null">
   
   <!-- 站点验证相关 -->
   
@@ -33,27 +33,28 @@
     
   
   <!-- 样式表文件 -->
-  <link rel="stylesheet" id="kratos-css" href="/css/kratosr.min.css" type="text/css" media="all">
+  <link rel="stylesheet" id="kratos-css" href="/css/kratosr.min.css" media="all"></script>
   
-    <link rel="stylesheet" id="highlight-css" href="/css/highlight/night-eighties.min.css" type="text/css" media="all">
-  
-  
-  <link rel="stylesheet" id="fontawe-css" href="https://unpkg.com/font-awesome@4.7.0/css/font-awesome.min.css" type="text/css" media="all">
-  <link rel="stylesheet" id="nprogress-css" href="https://unpkg.com/nprogress@0.2.0/nprogress.css" type="text/css" media="all">
+    <link rel="stylesheet" id="darkmode-css" href="/css/kr-color-dark.min.css" media="(prefers-color-scheme: dark)"></script>
+    <script src="/js/kr-dark.min.js"></script>
   
   
-    <link rel="stylesheet" href="https://unpkg.com/aplayer@1.10.1/dist/APlayer.min.css">
+    <link rel="stylesheet" id="highlight-css" href="/css/highlight/night-eighties.min.css" media="all"></script>
   
   
-    <link rel="stylesheet" href="https://unpkg.com/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+  <link rel="stylesheet" id="fontawe-css" href="/vendors/font-awesome@4.7.0/css/font-awesome.min.css" media="all"></script>
+  <link rel="stylesheet" id="nprogress-css" href="/vendors/nprogress@0.2.0/nprogress.css" media="all"></script>
   
   
-    <link rel="stylesheet" id="darkmode-css" href="/css/kr-dark.min.css" type="text/css" media="all">
+    <link rel="stylesheet" href="/vendors/aplayer@1.10.1/dist/APlayer.min.css"></script>
+  
+  
+    <link rel="stylesheet" href="/vendors/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"></script>
   
   <!-- 不得不预先加载的一些JS文件 -->
-  <script src="https://unpkg.com/jquery@3.6.0/dist/jquery.min.js"></script>
+  <script src="/vendors/jquery@3.6.0/dist/jquery.min.js"></script>
   
-    <script src="https://unpkg.com/qrcode_js@1.0.0/qrcode.min.js"></script>
+    <script src="/vendors/qrcode_js@1.0.0/qrcode.min.js"></script>
   
   
   <style>
@@ -85,56 +86,107 @@
                             <ul id="kratos-primary-menu" class="sf-menu">
                                 
                                     
-                                        <li><a href="/"><i class="fa fa-home"></i>首页</a></li>
-                                    
-                                
-                                    
-                                        <li><a href="/archives/"><i class="fa fa-file"></i>档案馆</a></li>
-                                    
-                                
-                                    
-                                        <li><a href="/friends/"><i class="fa fa-paw"></i>好伙伴</a></li>
-                                    
-                                
-                                    
                                         <li>
-                                            <a><i class="fa fa-paper-plane"></i>关于</a>
-                                            <ul class="sub-menu">
+                                            
+                                                <a href="/">
+                                            
                                                 
-                                                    
+                                                    <i class="fa fa-home"></i>
                                                 
-                                                    
-                                                        <li><a href="/about/blog/">关于博客</a></li>
-                                                    
-                                                
-                                                    
-                                                        <li><a href="/about/comment/">评论指南与隐私指引</a></li>
-                                                    
-                                                
-                                                    
-                                                        <li><a href="/about/rights/">版权与其他权利</a></li>
-                                                    
-                                                
-                                            </ul>
+                                                首页
+                                            </a>
+                                            
                                         </li>
                                     
-                                
+                                        <li>
+                                            
+                                                <a href="/archives/">
+                                            
+                                                
+                                                    <i class="fa fa-file"></i>
+                                                
+                                                档案馆
+                                            </a>
+                                            
+                                        </li>
                                     
                                         <li>
-                                            <a><i class="fa fa-link"></i>链接</a>
-                                            <ul class="sub-menu">
+                                            
+                                                <a href="/friends/">
+                                            
                                                 
-                                                    
+                                                    <i class="fa fa-paw"></i>
                                                 
-                                                    
-                                                        <li><a target="_blank" rel="noopener" href="https://candinya.com">作者博客</a></li>
-                                                    
+                                                好伙伴
+                                            </a>
+                                            
+                                        </li>
+                                    
+                                        <li>
+                                            
+                                                <a>
+                                            
                                                 
-                                                    
-                                                        <li><a target="_blank" rel="noopener" href="https://github.com/Candinya/Kratos-Rebirth">项目链接</a></li>
-                                                    
+                                                    <i class="fa fa-paper-plane"></i>
                                                 
-                                            </ul>
+                                                关于
+                                            </a>
+                                            
+                                                <ul class="sub-menu">
+                                                    
+                                                        <li>
+                                                            <a href="/about/blog/">
+                                                                
+                                                                关于博客
+                                                            </a>
+                                                        </li>
+                                                    
+                                                        <li>
+                                                            <a href="/about/comment/">
+                                                                
+                                                                评论指南与隐私指引
+                                                            </a>
+                                                        </li>
+                                                    
+                                                        <li>
+                                                            <a href="/about/rights/">
+                                                                
+                                                                版权与其他权利
+                                                            </a>
+                                                        </li>
+                                                    
+                                                </ul>
+                                            
+                                        </li>
+                                    
+                                        <li>
+                                            
+                                                <a>
+                                            
+                                                
+                                                    <i class="fa fa-link"></i>
+                                                
+                                                链接
+                                            </a>
+                                            
+                                                <ul class="sub-menu">
+                                                    
+                                                        <li>
+                                                            <a target="_blank" rel="noopener" href="https://candinya.com">
+                                                                
+                                                                作者博客
+                                                            </a>
+                                                        </li>
+                                                    
+                                                        <li>
+                                                            <a target="_blank" rel="noopener" href="https://github.com/Candinya/Kratos-Rebirth">
+                                                                
+                                                                项目链接
+                                                            </a>
+                                                        </li>
+                                                    
+                                                </ul>
+                                            
                                         </li>
                                     
                                 
@@ -181,9 +233,10 @@
 
 
 
+
     
     
-        <article class="kratos-hentry clearfix">
+        <article class="kratos-hentry clearfix" itemscope itemtype="https://schema.org/Article">
             <div class="kratos-entry-border-new clearfix">
                 
                     <div class="pin-top wrapper">
@@ -193,17 +246,17 @@
                 <div class="kratos-entry-thumb-new">
                     <a href="/2022/04/02/waline-tutorial/">
                         
-                            <img class="kratos-entry-thumb-new-img">
+                            <img class="kratos-entry-thumb-new-img" alt="">
                         
                     </a>
                 </div>
                 <div class="kratos-post-inner-new">
                     <header class="kratos-entry-header-new">
                             <a class="label-link" href="/categories/%E6%8A%80%E6%9C%AF%E6%8C%87%E5%8C%97/">技术指北</a>
-                        <h2 class="kratos-entry-title-new"><a href="/2022/04/02/waline-tutorial/">waline食用教程</a>
+                        <h2 class="kratos-entry-title-new"><a href="/2022/04/02/waline-tutorial/" itemprop="mainEntityOfPage"><span itemprop="name headline">waline食用教程</span></a>
                     </header>
                     <div class="kratos-entry-content-new">
-                        <p>
+                        <p itemProp="description">
                             
                                 前言关于利用github+hexo搭建个人博客，中文互联网上已经有了不少介绍。
 炫酷的评论系统一直是一个优秀的博客不可缺少的要素，但是网络上关于建设评论系统的教程却一直很少。
@@ -214,10 +267,9 @@
                 </div>
                 <footer class="kratos-post-meta-new">
                     <span class="pull-left">
-                        <a>
-                            <i class="fa fa-calendar"></i>
-                            2022-04-02
-                        </a>
+                        <time datetime="2022-04-01T16:00:00.000Z" itemprop="datePublished">
+                            <a><i class="fa fa-calendar"></i> 2022-04-02</a>
+                        </time>
                         <a>
                             
                                 <i class="fa fa-tags"></i>
@@ -253,7 +305,7 @@
 
     
     
-        <article class="kratos-hentry clearfix">
+        <article class="kratos-hentry clearfix" itemscope itemtype="https://schema.org/Article">
             <div class="kratos-entry-border-new clearfix">
                 
                     <div class="pin-top wrapper">
@@ -263,17 +315,17 @@
                 <div class="kratos-entry-thumb-new">
                     <a href="/2021/08/12/key-xxct2021-luogu-T187663/">
                         
-                            <img class="kratos-entry-thumb-new-img">
+                            <img class="kratos-entry-thumb-new-img" alt="">
                         
                     </a>
                 </div>
                 <div class="kratos-post-inner-new">
                     <header class="kratos-entry-header-new">
                             <a class="label-link" href="/categories/%E9%A2%98%E8%A7%A3/">题解</a>
-                        <h2 class="kratos-entry-title-new"><a href="/2021/08/12/key-xxct2021-luogu-T187663/">【题解】 信息草堂2021 洛谷T187663 受欢迎的wmgg</a>
+                        <h2 class="kratos-entry-title-new"><a href="/2021/08/12/key-xxct2021-luogu-T187663/" itemprop="mainEntityOfPage"><span itemprop="name headline">【题解】 信息草堂2021 洛谷T187663 受欢迎的wmgg</span></a>
                     </header>
                     <div class="kratos-entry-content-new">
-                        <p>
+                        <p itemProp="description">
                             
                                 原题题目背景wmgg在邮中的人气实在太高啦o(￣▽￣)o，请你想办法帮帮受欢迎的wmgg分配时间。
 题目描述wmgg在邮中的人气实在太高啦o(￣▽￣)o，以至于每天QQ上要和好多学弟学妹们交流。但是wmgg始终秉持着平等对待的原则，和...
@@ -283,10 +335,9 @@
                 </div>
                 <footer class="kratos-post-meta-new">
                     <span class="pull-left">
-                        <a>
-                            <i class="fa fa-calendar"></i>
-                            2021-08-12
-                        </a>
+                        <time datetime="2021-08-11T16:00:00.000Z" itemprop="datePublished">
+                            <a><i class="fa fa-calendar"></i> 2021-08-12</a>
+                        </time>
                         <a>
                             
                                 <i class="fa fa-tags"></i>
@@ -322,7 +373,7 @@
 
     
     
-        <article class="kratos-hentry clearfix">
+        <article class="kratos-hentry clearfix" itemscope itemtype="https://schema.org/Article">
             <div class="kratos-entry-border-new clearfix">
                 
                     <div class="pin-top wrapper">
@@ -332,17 +383,17 @@
                 <div class="kratos-entry-thumb-new">
                     <a href="/2021/08/12/key-xxct2021-luogu-T188795/">
                         
-                            <img class="kratos-entry-thumb-new-img">
+                            <img class="kratos-entry-thumb-new-img" alt="">
                         
                     </a>
                 </div>
                 <div class="kratos-post-inner-new">
                     <header class="kratos-entry-header-new">
                             <a class="label-link" href="/categories/%E9%A2%98%E8%A7%A3/">题解</a>
-                        <h2 class="kratos-entry-title-new"><a href="/2021/08/12/key-xxct2021-luogu-T188795/">【题解】 信息草堂2021 洛谷T188795 wmgg爱修路</a>
+                        <h2 class="kratos-entry-title-new"><a href="/2021/08/12/key-xxct2021-luogu-T188795/" itemprop="mainEntityOfPage"><span itemprop="name headline">【题解】 信息草堂2021 洛谷T188795 wmgg爱修路</span></a>
                     </header>
                     <div class="kratos-entry-content-new">
-                        <p>
+                        <p itemProp="description">
                             
                                 原题题目背景邮中的路因为常年使用而变得坑坑洼洼，乐于助人的wmgg怎么能忍受呢，他决定帮助同学们维修道路。
 题目描述这是一条长度为 $l$ 的道路，整条坑坑洼洼的道路可以看作是 $l$ 段，每一段的高度都相等。整条道路的标准高度是 $...
@@ -352,10 +403,9 @@
                 </div>
                 <footer class="kratos-post-meta-new">
                     <span class="pull-left">
-                        <a>
-                            <i class="fa fa-calendar"></i>
-                            2021-08-12
-                        </a>
+                        <time datetime="2021-08-11T16:00:00.000Z" itemprop="datePublished">
+                            <a><i class="fa fa-calendar"></i> 2021-08-12</a>
+                        </time>
                         <a>
                             
                                 <i class="fa fa-tags"></i>
@@ -391,7 +441,7 @@
 
     
     
-        <article class="kratos-hentry clearfix">
+        <article class="kratos-hentry clearfix" itemscope itemtype="https://schema.org/Article">
             <div class="kratos-entry-border-new clearfix">
                 
                     <div class="pin-top wrapper">
@@ -401,17 +451,17 @@
                 <div class="kratos-entry-thumb-new">
                     <a href="/2021/08/12/key-xxct2021-luogu-T191707/">
                         
-                            <img class="kratos-entry-thumb-new-img">
+                            <img class="kratos-entry-thumb-new-img" alt="">
                         
                     </a>
                 </div>
                 <div class="kratos-post-inner-new">
                     <header class="kratos-entry-header-new">
                             <a class="label-link" href="/categories/%E9%A2%98%E8%A7%A3/">题解</a>
-                        <h2 class="kratos-entry-title-new"><a href="/2021/08/12/key-xxct2021-luogu-T191707/">【题解】 信息草堂2021 洛谷T191707 烦恼的Slithery</a>
+                        <h2 class="kratos-entry-title-new"><a href="/2021/08/12/key-xxct2021-luogu-T191707/" itemprop="mainEntityOfPage"><span itemprop="name headline">【题解】 信息草堂2021 洛谷T191707 烦恼的Slithery</span></a>
                     </header>
                     <div class="kratos-entry-content-new">
-                        <p>
+                        <p itemProp="description">
                             
                                 原题题目背景Slithery最近焦头烂额啦，因为有好多ACM赛制的练习赛。
 题目描述ACM赛制的排名规则如下：
@@ -424,10 +474,9 @@
                 </div>
                 <footer class="kratos-post-meta-new">
                     <span class="pull-left">
-                        <a>
-                            <i class="fa fa-calendar"></i>
-                            2021-08-12
-                        </a>
+                        <time datetime="2021-08-11T16:00:00.000Z" itemprop="datePublished">
+                            <a><i class="fa fa-calendar"></i> 2021-08-12</a>
+                        </time>
                         <a>
                             
                                 <i class="fa fa-tags"></i>
@@ -463,7 +512,7 @@
 
     
     
-        <article class="kratos-hentry clearfix">
+        <article class="kratos-hentry clearfix" itemscope itemtype="https://schema.org/Article">
             <div class="kratos-entry-border-new clearfix">
                 
                     <div class="pin-top wrapper">
@@ -473,17 +522,17 @@
                 <div class="kratos-entry-thumb-new">
                     <a href="/2020/12/06/noip2020-notes/">
                         
-                            <img class="kratos-entry-thumb-new-img">
+                            <img class="kratos-entry-thumb-new-img" alt="">
                         
                     </a>
                 </div>
                 <div class="kratos-post-inner-new">
                     <header class="kratos-entry-header-new">
                             <a class="label-link" href="/categories/%E6%9D%82%E8%AE%B0/">杂记</a>
-                        <h2 class="kratos-entry-title-new"><a href="/2020/12/06/noip2020-notes/">NOIP2020退役记</a>
+                        <h2 class="kratos-entry-title-new"><a href="/2020/12/06/noip2020-notes/" itemprop="mainEntityOfPage"><span itemprop="name headline">NOIP2020退役记</span></a>
                     </header>
                     <div class="kratos-entry-content-new">
-                        <p>
+                        <p itemProp="description">
                             
                                 Day 0由于动局疯狂拖进度，我算好了的高铁又变回了又颠又慢的大巴。
 奢侈入住NUAA对面的白玉兰，晚上去百家湖那边浪荡，回来刷了会B站，看了图论和DP的模板，好像最后也没啥用。
@@ -494,10 +543,9 @@ Day 1KFC早餐，然后赶往考场。这次分到哒是我最喜...
                 </div>
                 <footer class="kratos-post-meta-new">
                     <span class="pull-left">
-                        <a>
-                            <i class="fa fa-calendar"></i>
-                            2020-12-06
-                        </a>
+                        <time datetime="2020-12-05T16:00:00.000Z" itemprop="datePublished">
+                            <a><i class="fa fa-calendar"></i> 2020-12-06</a>
+                        </time>
                         <a>
                             
                                 <i class="fa fa-tags"></i>
@@ -533,7 +581,7 @@ Day 1KFC早餐，然后赶往考场。这次分到哒是我最喜...
 
     
     
-        <article class="kratos-hentry clearfix">
+        <article class="kratos-hentry clearfix" itemscope itemtype="https://schema.org/Article">
             <div class="kratos-entry-border-new clearfix">
                 
                     <div class="pin-top wrapper">
@@ -543,17 +591,17 @@ Day 1KFC早餐，然后赶往考场。这次分到哒是我最喜...
                 <div class="kratos-entry-thumb-new">
                     <a href="/2020/11/14/csp2020-notes/">
                         
-                            <img class="kratos-entry-thumb-new-img">
+                            <img class="kratos-entry-thumb-new-img" alt="">
                         
                     </a>
                 </div>
                 <div class="kratos-post-inner-new">
                     <header class="kratos-entry-header-new">
                             <a class="label-link" href="/categories/%E6%9D%82%E8%AE%B0/">杂记</a>
-                        <h2 class="kratos-entry-title-new"><a href="/2020/11/14/csp2020-notes/">CSP-S 2020 游记</a>
+                        <h2 class="kratos-entry-title-new"><a href="/2020/11/14/csp2020-notes/" itemprop="mainEntityOfPage"><span itemprop="name headline">CSP-S 2020 游记</span></a>
                     </header>
                     <div class="kratos-entry-content-new">
-                        <p>
+                        <p itemProp="description">
                             
                                 第一轮Day -？？？很可爱的初赛试卷，克劳德·香农和他引入的殇熵，谁知道啊，以及无线魔鬼的二进制。
 初赛在某yz，顺便去某楼逛了逛，人家在考试。
@@ -564,10 +612,9 @@ Day 1KFC早餐，然后赶往考场。这次分到哒是我最喜...
                 </div>
                 <footer class="kratos-post-meta-new">
                     <span class="pull-left">
-                        <a>
-                            <i class="fa fa-calendar"></i>
-                            2020-11-14
-                        </a>
+                        <time datetime="2020-11-13T16:00:00.000Z" itemprop="datePublished">
+                            <a><i class="fa fa-calendar"></i> 2020-11-14</a>
+                        </time>
                         <a>
                             
                                 <i class="fa fa-tags"></i>
@@ -603,7 +650,7 @@ Day 1KFC早餐，然后赶往考场。这次分到哒是我最喜...
 
     
     
-        <article class="kratos-hentry clearfix">
+        <article class="kratos-hentry clearfix" itemscope itemtype="https://schema.org/Article">
             <div class="kratos-entry-border-new clearfix">
                 
                     <div class="pin-top wrapper">
@@ -613,17 +660,17 @@ Day 1KFC早餐，然后赶往考场。这次分到哒是我最喜...
                 <div class="kratos-entry-thumb-new">
                     <a href="/2020/08/28/key-luogu-P4520/">
                         
-                            <img class="kratos-entry-thumb-new-img">
+                            <img class="kratos-entry-thumb-new-img" alt="">
                         
                     </a>
                 </div>
                 <div class="kratos-post-inner-new">
                     <header class="kratos-entry-header-new">
                             <a class="label-link" href="/categories/%E9%A2%98%E8%A7%A3/">题解</a>
-                        <h2 class="kratos-entry-title-new"><a href="/2020/08/28/key-luogu-P4520/">【题解】 洛谷P4520 [COCI2017-2018 Contest4] Izbori</a>
+                        <h2 class="kratos-entry-title-new"><a href="/2020/08/28/key-luogu-P4520/" itemprop="mainEntityOfPage"><span itemprop="name headline">【题解】 洛谷P4520 [COCI2017-2018 Contest4] Izbori</span></a>
                     </header>
                     <div class="kratos-entry-content-new">
-                        <p>
+                        <p itemProp="description">
                             
                                 题意原题链接
 一次选举，$N$ 个县给 $M$ 个候选人投票，给出每个县的投票候选序列，问在没有人退出选举的情况下获胜的人，并求最少劝说多少个人退出时，编号为 $K$ 的候选人将获胜。如果多人得票数并列第一，则编号小的人获胜。
@@ -634,10 +681,9 @@ Day 1KFC早餐，然后赶往考场。这次分到哒是我最喜...
                 </div>
                 <footer class="kratos-post-meta-new">
                     <span class="pull-left">
-                        <a>
-                            <i class="fa fa-calendar"></i>
-                            2020-08-28
-                        </a>
+                        <time datetime="2020-08-27T16:00:00.000Z" itemprop="datePublished">
+                            <a><i class="fa fa-calendar"></i> 2020-08-28</a>
+                        </time>
                         <a>
                             
                                 <i class="fa fa-tags"></i>
@@ -673,7 +719,7 @@ Day 1KFC早餐，然后赶往考场。这次分到哒是我最喜...
 
     
     
-        <article class="kratos-hentry clearfix">
+        <article class="kratos-hentry clearfix" itemscope itemtype="https://schema.org/Article">
             <div class="kratos-entry-border-new clearfix">
                 
                     <div class="pin-top wrapper">
@@ -683,17 +729,17 @@ Day 1KFC早餐，然后赶往考场。这次分到哒是我最喜...
                 <div class="kratos-entry-thumb-new">
                     <a href="/2020/08/18/apio2020-notes/">
                         
-                            <img class="kratos-entry-thumb-new-img">
+                            <img class="kratos-entry-thumb-new-img" alt="">
                         
                     </a>
                 </div>
                 <div class="kratos-post-inner-new">
                     <header class="kratos-entry-header-new">
                             <a class="label-link" href="/categories/%E6%9D%82%E8%AE%B0/">杂记</a>
-                        <h2 class="kratos-entry-title-new"><a href="/2020/08/18/apio2020-notes/">APIO2020打铁记</a>
+                        <h2 class="kratos-entry-title-new"><a href="/2020/08/18/apio2020-notes/" itemprop="mainEntityOfPage"><span itemprop="name headline">APIO2020打铁记</span></a>
                     </header>
                     <div class="kratos-entry-content-new">
-                        <p>
+                        <p itemProp="description">
                             
                                 叮咚啊啊啊啊18号了，度过了漫长的2天保密期，终于可以写博客了。
 duang号外！！！打铁选手报名APIO！！！
@@ -705,10 +751,9 @@ duang号外！！！打铁选手报名APIO！！！
                 </div>
                 <footer class="kratos-post-meta-new">
                     <span class="pull-left">
-                        <a>
-                            <i class="fa fa-calendar"></i>
-                            2020-08-18
-                        </a>
+                        <time datetime="2020-08-17T16:00:00.000Z" itemprop="datePublished">
+                            <a><i class="fa fa-calendar"></i> 2020-08-18</a>
+                        </time>
                         <a>
                             
                                 <i class="fa fa-tags"></i>
@@ -744,7 +789,7 @@ duang号外！！！打铁选手报名APIO！！！
 
     
     
-        <article class="kratos-hentry clearfix">
+        <article class="kratos-hentry clearfix" itemscope itemtype="https://schema.org/Article">
             <div class="kratos-entry-border-new clearfix">
                 
                     <div class="pin-top wrapper">
@@ -754,17 +799,17 @@ duang号外！！！打铁选手报名APIO！！！
                 <div class="kratos-entry-thumb-new">
                     <a href="/2020/05/25/noi-online3-notes/">
                         
-                            <img class="kratos-entry-thumb-new-img">
+                            <img class="kratos-entry-thumb-new-img" alt="">
                         
                     </a>
                 </div>
                 <div class="kratos-post-inner-new">
                     <header class="kratos-entry-header-new">
                             <a class="label-link" href="/categories/%E6%9D%82%E8%AE%B0/">杂记</a>
-                        <h2 class="kratos-entry-title-new"><a href="/2020/05/25/noi-online3-notes/">NOI Online 第三轮咕咕记</a>
+                        <h2 class="kratos-entry-title-new"><a href="/2020/05/25/noi-online3-notes/" itemprop="mainEntityOfPage"><span itemprop="name headline">NOI Online 第三轮咕咕记</span></a>
                     </header>
                     <div class="kratos-entry-content-new">
-                        <p>
+                        <p itemProp="description">
                             
                                 前言我真不知道为啥要报名
 难得一次比赛时间不用上学，上个星期因为脑子被驴踢了的什么破死不要脸神经病枪击计划被几个老师轮番劝退
@@ -777,10 +822,9 @@ dzd万岁！！！ccf万岁！！！noi万岁！！！
                 </div>
                 <footer class="kratos-post-meta-new">
                     <span class="pull-left">
-                        <a>
-                            <i class="fa fa-calendar"></i>
-                            2020-05-25
-                        </a>
+                        <time datetime="2020-05-24T16:00:00.000Z" itemprop="datePublished">
+                            <a><i class="fa fa-calendar"></i> 2020-05-25</a>
+                        </time>
                         <a>
                             
                                 <i class="fa fa-tags"></i>
@@ -816,7 +860,7 @@ dzd万岁！！！ccf万岁！！！noi万岁！！！
 
     
     
-        <article class="kratos-hentry clearfix">
+        <article class="kratos-hentry clearfix" itemscope itemtype="https://schema.org/Article">
             <div class="kratos-entry-border-new clearfix">
                 
                     <div class="pin-top wrapper">
@@ -826,17 +870,17 @@ dzd万岁！！！ccf万岁！！！noi万岁！！！
                 <div class="kratos-entry-thumb-new">
                     <a href="/2020/04/28/noi-online2-notes/">
                         
-                            <img class="kratos-entry-thumb-new-img">
+                            <img class="kratos-entry-thumb-new-img" alt="">
                         
                     </a>
                 </div>
                 <div class="kratos-post-inner-new">
                     <header class="kratos-entry-header-new">
                             <a class="label-link" href="/categories/%E6%9D%82%E8%AE%B0/">杂记</a>
-                        <h2 class="kratos-entry-title-new"><a href="/2020/04/28/noi-online2-notes/">NOI Online 第二轮划水记</a>
+                        <h2 class="kratos-entry-title-new"><a href="/2020/04/28/noi-online2-notes/" itemprop="mainEntityOfPage"><span itemprop="name headline">NOI Online 第二轮划水记</span></a>
                     </header>
                     <div class="kratos-entry-content-new">
-                        <p>
+                        <p itemProp="description">
                             
                                 前言额，所以我为神马要报名
 就这么迷迷糊糊报了名
@@ -852,10 +896,9 @@ js蛇精病老不早就开学
                 </div>
                 <footer class="kratos-post-meta-new">
                     <span class="pull-left">
-                        <a>
-                            <i class="fa fa-calendar"></i>
-                            2020-04-28
-                        </a>
+                        <time datetime="2020-04-27T16:00:00.000Z" itemprop="datePublished">
+                            <a><i class="fa fa-calendar"></i> 2020-04-28</a>
+                        </time>
                         <a>
                             
                                 <i class="fa fa-tags"></i>
@@ -903,20 +946,14 @@ js蛇精病老不早就开学
             <div id="w-comments" class="post-comments"></div>
 <script>
     var load_comm = () => {
-        const locale = {
-            mail: '邮箱（选填）',
-            link: '个人网址（选填）',
-            placeholder: '说说点什么喵～o(=•ェ•=)  无需登录也完全没问题哦～  您的评论可能需经审核后展示,请勿重复提交  填写邮箱后可以收到回复提醒呢 评论请参阅“关于-评论指南与隐私指引”'
-        };
         const init = () => {
             new Waline(Object.assign({
                 el: '#w-comments',
-                path: '/index.html',
-                locale
+                path: '/index.html'
             }, JSON.parse('{"serverURL":"https://blog-wa-com.vercel.app/","visitor":true}')));
         }
         if (typeof Waline === 'undefined') {
-            const src = 'https://unpkg.com/@waline/client@1/dist/Waline.min.js';
+            const src = '/vendors/@waline/client@1.6.0/dist/Waline.min.js';
             $.getScript(src, init);
         } else {
             init();
@@ -949,7 +986,7 @@ js蛇精病老不早就开学
     <div class="photo-background"></div>
     <div class="photo-wrapper clearfix">
         <div class="photo-wrapper-tip text-center">
-            <img class="about-photo" src="/images/logo.webp" />
+            <img class="about-photo" src="/images/avatar.webp" loading="lazy" decoding="auto" />
         </div>
     </div>
     <div class="textwidget">
@@ -1128,8 +1165,8 @@ js蛇精病老不早就开学
 </div>
 </div>
 
-        <script defer src="https://unpkg.com/bootstrap@3.3.4/dist/js/bootstrap.min.js"></script>
-<script defer src="https://unpkg.com/nprogress@0.2.0/nprogress.js"></script>
+        <script defer src="/vendors/bootstrap@3.3.4/dist/js/bootstrap.min.js"></script>
+<script defer src="/vendors/nprogress@0.2.0/nprogress.js"></script>
 <script>
     if (!window.kr) {
         window.kr = {};
@@ -1138,19 +1175,14 @@ js蛇精病老不早就开学
     window.kr.siteRoot = "/";
 </script>
 
-    <div>
-        <canvas id="snow"></canvas>
-        <script async type="text/javascript" src="/js/snow.min.js"></script>
-    </div>
-
 
     <script async src="/js/candy.min.js"></script>
 
 
 
-    <script defer src="https://unpkg.com/aplayer@1.10.1/dist/APlayer.min.js"></script>
+    <script defer src="/vendors/aplayer@1.10.1/dist/APlayer.min.js"></script>
     
-    <script defer src="https://unpkg.com/meting@2/dist/Meting.min.js"></script>
+    <script defer src="/vendors/meting@2.0.1/dist/Meting.min.js"></script>
     <meting-js
         server="tencent"
         type="playlist"
@@ -1162,14 +1194,11 @@ js蛇精病老不早就开学
 
 
 
-    <script defer src="https://unpkg.com/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script defer src="/vendors/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 
-<script defer src="https://unpkg.com/clipboard@2.0.6/dist/clipboard.min.js"></script>
+<script defer src="/vendors/clipboard@2.0.6/dist/clipboard.min.js"></script>
 <script defer src="/js/kratosr.min.js"></script>
 <script defer src="/js/pjax.min.js"></script>
-
-
-    <script defer src="/js/kr-dark.min.js"></script>
 
 
 
