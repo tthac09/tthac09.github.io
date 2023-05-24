@@ -6,6 +6,7 @@
   <link rel="icon" href="/images/logo.webp">
   
   <title>标签: CSP-J/S | tthac09&#39;s blog</title>
+  
   <meta name="author" content="tthac09" />
   <meta http-equiv="Cache-Control" content="no-transform" />
   <meta http-equiv="Cache-Control" content="no-siteapp" />
@@ -40,7 +41,6 @@
   
   
     <link rel="stylesheet" id="highlight-css" href="/css/highlight/night-eighties.min.css" media="all"></script>
-  
   
   <link rel="stylesheet" id="fontawe-css" href="/vendors/font-awesome@4.7.0/css/font-awesome.min.css" media="all"></script>
   <link rel="stylesheet" id="nprogress-css" href="/vendors/nprogress@0.2.0/nprogress.css" media="all"></script>
@@ -93,7 +93,7 @@
                                                 
                                                     <i class="fa fa-home"></i>
                                                 
-                                                首页2.1.0
+                                                首页
                                             </a>
                                             
                                         </li>
@@ -298,9 +298,9 @@
                         
                             <!-- 当前仅支持valine/waline自带的统计功能 -->
                             
-                                <a id="/2020/11/14/csp2020-notes/" class="leancloud_visitors" data-flag-title="CSP-S 2020 游记">
+                                <a>
                                     <i class="fa fa-eye"></i>
-                                    <span class="leancloud-visitors-count"> </span> 次阅读
+                                    <span data-path="/2020/11/14/csp2020-notes/" class="waline-pageview-count"> </span> 次阅读
                                 </a>
                             
                         
@@ -309,7 +309,7 @@
                             
                                 <a>
                                     <i class="fa fa-commenting-o"></i>
-                                    <span data-xid="/2020/11/14/csp2020-notes/" class="waline-comment-count"> </span> 条评论
+                                    <span data-path="/2020/11/14/csp2020-notes/" class="waline-comment-count"> </span> 条评论
                                 </a>
                             
                         
@@ -367,9 +367,9 @@
                         
                             <!-- 当前仅支持valine/waline自带的统计功能 -->
                             
-                                <a id="/2019/11/17/csp2019-notes/" class="leancloud_visitors" data-flag-title="CSP2019滚粗记">
+                                <a>
                                     <i class="fa fa-eye"></i>
-                                    <span class="leancloud-visitors-count"> </span> 次阅读
+                                    <span data-path="/2019/11/17/csp2019-notes/" class="waline-pageview-count"> </span> 次阅读
                                 </a>
                             
                         
@@ -378,7 +378,7 @@
                             
                                 <a>
                                     <i class="fa fa-commenting-o"></i>
-                                    <span data-xid="/2019/11/17/csp2019-notes/" class="waline-comment-count"> </span> 条评论
+                                    <span data-path="/2019/11/17/csp2019-notes/" class="waline-comment-count"> </span> 条评论
                                 </a>
                             
                         
@@ -399,16 +399,18 @@
         <!-- 加载文章阅读对应的统计功能，评论自带的那种 -->
         
             <div id="w-comments" class="post-comments"></div>
+<link rel="stylesheet" href="/vendors/@waline/client@2.14.1/dist/waline.css" />
 <script>
     var load_comm = () => {
         const init = () => {
-            new Waline(Object.assign({
+            Waline.init(Object.assign({
                 el: '#w-comments',
-                path: '/tags/CSP-J-S/index.html'
-            }, JSON.parse('{"serverURL":"https://blog-wa-com.vercel.app/","visitor":true}')));
+                path: '/tags/CSP-J-S/index.html',
+                dark: 'html[data-theme="dark"]',
+            }, JSON.parse('{"serverURL":"https://blog-wa-com.vercel.app/","comment":true,"pageview":true}')));
         }
         if (typeof Waline === 'undefined') {
-            const src = '/vendors/@waline/client@1.6.0/dist/Waline.min.js';
+            const src = '/vendors/@waline/client@2.14.1/dist/waline.js';
             $.getScript(src, init);
         } else {
             init();
@@ -572,6 +574,7 @@
             <div class="row">
                 <div class="col-md-6 col-md-offset-3 footer-list text-center">
                     <ul class="kratos-social-icons">
+                        <!-- Keep for compatibility -->
                         
                         <li><a href="mailto:tthac09@outlook.com"><i class="fa fa-envelope"></i></a></li>
                         
@@ -580,6 +583,8 @@
                         
                         
                         
+                        
+                        <!-- New links -->
                         
                     </ul>
                     <ul class="kratos-copyright">
@@ -616,6 +621,7 @@
                     <div class="box theme-box" id="darkmode-switch">
                         <span class="fa fa-adjust"></span>
                     </div>
+                
                 
                 
             </div>
@@ -659,7 +665,6 @@
 
     <script defer src="/vendors/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 
-<script defer src="/vendors/clipboard@2.0.6/dist/clipboard.min.js"></script>
 <script defer src="/js/kratosr.min.js"></script>
 <script defer src="/js/pjax.min.js"></script>
 

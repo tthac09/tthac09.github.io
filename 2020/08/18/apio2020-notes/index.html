@@ -6,6 +6,7 @@
   <link rel="icon" href="/images/logo.webp">
   
   <title>APIO2020打铁记 | tthac09&#39;s blog</title>
+  
   <meta name="author" content="tthac09" />
   <meta http-equiv="Cache-Control" content="no-transform" />
   <meta http-equiv="Cache-Control" content="no-siteapp" />
@@ -45,7 +46,6 @@
   
   
     <link rel="stylesheet" id="highlight-css" href="/css/highlight/night-eighties.min.css" media="all"></script>
-  
   
   <link rel="stylesheet" id="fontawe-css" href="/vendors/font-awesome@4.7.0/css/font-awesome.min.css" media="all"></script>
   <link rel="stylesheet" id="nprogress-css" href="/vendors/nprogress@0.2.0/nprogress.css" media="all"></script>
@@ -98,7 +98,7 @@
                                                 
                                                     <i class="fa fa-home"></i>
                                                 
-                                                首页2.1.0
+                                                首页
                                             </a>
                                             
                                         </li>
@@ -248,23 +248,27 @@
                 <li itemprop="author" itemscope itemtype="https://schema.org/Person">
                     <i class="fa fa-user"></i> 作者 <span itemprop="name">tthac09</span>
                 </li>
-                <li>
-                    <i class="fa fa-edit"></i> 
-                    
-                    
-                        1118
-                    
-                    字
-                </li>
                 
-                    <li id="/2020/08/18/apio2020-notes/" class="leancloud_visitors" data-flag-title="APIO2020打铁记">
-                        <i class="fa fa-eye"></i>
-                        <span class="leancloud-visitors-count"> </span> 次阅读
+                    <li>
+                        <i class="fa fa-edit"></i> 
+                        
+                        
+                            1118
+                        
+                        字
                     </li>
+                
+                
+                    
+                        <li>
+                            <i class="fa fa-eye"></i>
+                            <span data-path="/2020/08/18/apio2020-notes/" class="waline-pageview-count"> </span> 次阅读
+                        </li>
+                    
                     
                         <li>
                             <i class="fa fa-commenting-o"></i>
-                            <span data-xid="/2020/08/18/apio2020-notes/" class="waline-comment-count"> </span> 条评论
+                            <span data-path="/2020/08/18/apio2020-notes/" class="waline-comment-count"> </span> 条评论
                         </li>
                     
                 
@@ -278,7 +282,8 @@
             </div>
             
             
-                <div class="kratos-post-inner-toc">
+            
+                <div class="kratos-post-inner-toc toc-div-class" >
                     <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8F%AE%E5%92%9A"><span class="toc-number">1.</span> <span class="toc-text">叮咚</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#duang"><span class="toc-number">2.</span> <span class="toc-text">duang</span></a></li></ol>
                 </div>
             
@@ -313,7 +318,7 @@
         </div>
         
             <div class="kratos-copyright text-center clearfix">
-                <h5 itemprop="copyrightNotice">本作品采用 <a rel="license nofollow" target="_blank" href="https://creativecommons.org/licenses/by-nc-nd/4.0/">知识共享署名-非商业性使用-禁止演绎 4.0 国际许可协议</a> 进行许可</h5>
+                <h5 itemprop="copyrightNotice">本作品采用 <a rel="license nofollow" target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/">知识共享署名-相同方式共享 4.0 国际许可协议</a> 进行许可</h5>
             </div>
         
         <footer class="kratos-entry-footer clearfix">
@@ -422,16 +427,18 @@ duang号外！！！打铁选手报名APIO！！！
     
     
         <div id="w-comments" class="post-comments"></div>
+<link rel="stylesheet" href="/vendors/@waline/client@2.14.1/dist/waline.css" />
 <script>
     var load_comm = () => {
         const init = () => {
-            new Waline(Object.assign({
+            Waline.init(Object.assign({
                 el: '#w-comments',
-                path: '/2020/08/18/apio2020-notes/'
-            }, JSON.parse('{"serverURL":"https://blog-wa-com.vercel.app/","visitor":true}')));
+                path: '/2020/08/18/apio2020-notes/',
+                dark: 'html[data-theme="dark"]',
+            }, JSON.parse('{"serverURL":"https://blog-wa-com.vercel.app/","comment":true,"pageview":true}')));
         }
         if (typeof Waline === 'undefined') {
-            const src = '/vendors/@waline/client@1.6.0/dist/Waline.min.js';
+            const src = '/vendors/@waline/client@2.14.1/dist/waline.js';
             $.getScript(src, init);
         } else {
             init();
@@ -496,7 +503,7 @@ duang号外！！！打铁选手报名APIO！！！
             
                     <div class="sticky-area">
                 
-                    <aside id="krw-toc" class="widget widget-kratos-toc clearfix">
+                    <aside id="krw-toc" class="widget widget-kratos-toc clearfix toc-div-class" >
     <div class="photo-background"></div>
     <h4 class="widget-title no-after">
         <i class="fa fa-compass"></i>
@@ -605,6 +612,7 @@ duang号外！！！打铁选手报名APIO！！！
             <div class="row">
                 <div class="col-md-6 col-md-offset-3 footer-list text-center">
                     <ul class="kratos-social-icons">
+                        <!-- Keep for compatibility -->
                         
                         <li><a href="mailto:tthac09@outlook.com"><i class="fa fa-envelope"></i></a></li>
                         
@@ -613,6 +621,8 @@ duang号外！！！打铁选手报名APIO！！！
                         
                         
                         
+                        
+                        <!-- New links -->
                         
                     </ul>
                     <ul class="kratos-copyright">
@@ -649,6 +659,7 @@ duang号外！！！打铁选手报名APIO！！！
                     <div class="box theme-box" id="darkmode-switch">
                         <span class="fa fa-adjust"></span>
                     </div>
+                
                 
                 
             </div>
@@ -692,7 +703,6 @@ duang号外！！！打铁选手报名APIO！！！
 
     <script defer src="/vendors/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 
-<script defer src="/vendors/clipboard@2.0.6/dist/clipboard.min.js"></script>
 <script defer src="/js/kratosr.min.js"></script>
 <script defer src="/js/pjax.min.js"></script>
 
