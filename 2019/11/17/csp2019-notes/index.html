@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+    <head>
+  <!-- 元数据 -->
+  <meta charset="utf-8">
+  <link rel="icon" href="/images/logo.webp">
+  
+  <title>CSP2019滚粗记 | tthac09&#39;s blog</title>
+  
+  <meta name="author" content="tthac09" />
+  <meta http-equiv="Cache-Control" content="no-transform" />
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="robots" content="index,follow" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta name="format-detection" content="telphone=no, email=no" />
+  
+    <meta name="keywords" content="CSP-J/S" />
+  
+  <meta name="description" content="作于2019&#x2F;11&#x2F;17夜 前言の前言震惊！！！kkk竟然将本游记收录在了入门组or both里面，怪我标题没写清楚。。。 既然被收录了，那我肯定要稍微修改一下，尽管阅读量感人 这是本蒟蒻早期博客文章，更多侧重描写竞赛过程的见闻，对题目描述较少几乎没有。 写在前面去年noip游记豪言壮志一本正经说了什么再战紫金，这回彻底滚粗了 du">
+<meta property="og:type" content="article">
+<meta property="og:title" content="CSP2019滚粗记">
+<meta property="og:url" content="https://tthac09.github.io/2019/11/17/csp2019-notes/index.html">
+<meta property="og:site_name" content="tthac09&#39;s blog">
+<meta property="og:description" content="作于2019&#x2F;11&#x2F;17夜 前言の前言震惊！！！kkk竟然将本游记收录在了入门组or both里面，怪我标题没写清楚。。。 既然被收录了，那我肯定要稍微修改一下，尽管阅读量感人 这是本蒟蒻早期博客文章，更多侧重描写竞赛过程的见闻，对题目描述较少几乎没有。 写在前面去年noip游记豪言壮志一本正经说了什么再战紫金，这回彻底滚粗了 du">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://tthac09.github.io/images/logo.webp">
+<meta property="article:published_time" content="2019-11-16T16:00:00.000Z">
+<meta property="article:modified_time" content="2022-04-02T12:42:04.675Z">
+<meta property="article:author" content="tthac09">
+<meta property="article:tag" content="CSP-J&#x2F;S">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://tthac09.github.io/images/logo.webp">
+  
+  <!-- 站点验证相关 -->
+  
+    
+    
+    
+  
+  <!-- 样式表文件 -->
+  <link rel="stylesheet" id="kratos-css" href="/css/kratosr.min.css" media="all"></script>
+  
+    <link rel="stylesheet" id="darkmode-css" href="/css/kr-color-dark.min.css" media="(prefers-color-scheme: dark)"></script>
+    <script src="/js/kr-dark.min.js"></script>
+  
+  
+    <link rel="stylesheet" id="highlight-css" href="/css/highlight/night-eighties.min.css" media="all"></script>
+  
+  <link rel="stylesheet" id="fontawe-css" href="/vendors/font-awesome@4.7.0/css/font-awesome.min.css" media="all"></script>
+  <link rel="stylesheet" id="nprogress-css" href="/vendors/nprogress@0.2.0/nprogress.css" media="all"></script>
+  
+  
+    <link rel="stylesheet" href="/vendors/aplayer@1.10.1/dist/APlayer.min.css"></script>
+  
+  
+    <link rel="stylesheet" href="/vendors/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"></script>
+  
+  <!-- 不得不预先加载的一些JS文件 -->
+  <script src="/vendors/jquery@3.6.0/dist/jquery.min.js"></script>
+  
+    <script src="/vendors/qrcode_js@1.0.0/qrcode.min.js"></script>
+  
+  
+  <style>
+    
+      .kratos-cover.kratos-cover-2 {
+        background-image: url('/images/banner.webp');
+      }
+    
+    
+      @media(min-width:768px) {
+        body.custom-background {
+          background-image: url('/images/bg.webp');
+        }
+      }
+    
+  </style>
+  
+<meta name="generator" content="Hexo 6.0.0"></head>
+
+
+    <body class="custom-background">
+        <div id="kratos-wrapper">
+    <div id="kratos-page">
+        <div id="kratos-header">
+            <header id="kratos-desktop-topnav" class="kratos-topnav">
+                <div class="container">
+                    <div class="nav-header">
+                        <nav id="kratos-menu-wrap">
+                            <ul id="kratos-primary-menu" class="sf-menu">
+                                
+                                    
+                                        <li>
+                                            
+                                                <a href="/">
+                                            
+                                                
+                                                    <i class="fa fa-home"></i>
+                                                
+                                                首页
+                                            </a>
+                                            
+                                        </li>
+                                    
+                                        <li>
+                                            
+                                                <a href="/archives/">
+                                            
+                                                
+                                                    <i class="fa fa-file"></i>
+                                                
+                                                档案馆
+                                            </a>
+                                            
+                                        </li>
+                                    
+                                        <li>
+                                            
+                                                <a href="/friends/">
+                                            
+                                                
+                                                    <i class="fa fa-paw"></i>
+                                                
+                                                好伙伴
+                                            </a>
+                                            
+                                        </li>
+                                    
+                                        <li>
+                                            
+                                                <a>
+                                            
+                                                
+                                                    <i class="fa fa-paper-plane"></i>
+                                                
+                                                关于
+                                            </a>
+                                            
+                                                <ul class="sub-menu">
+                                                    
+                                                        <li>
+                                                            <a href="/about/blog/">
+                                                                
+                                                                关于博客
+                                                            </a>
+                                                        </li>
+                                                    
+                                                        <li>
+                                                            <a href="/about/comment/">
+                                                                
+                                                                评论指南与隐私指引
+                                                            </a>
+                                                        </li>
+                                                    
+                                                        <li>
+                                                            <a href="/about/rights/">
+                                                                
+                                                                版权与其他权利
+                                                            </a>
+                                                        </li>
+                                                    
+                                                </ul>
+                                            
+                                        </li>
+                                    
+                                        <li>
+                                            
+                                                <a>
+                                            
+                                                
+                                                    <i class="fa fa-link"></i>
+                                                
+                                                链接
+                                            </a>
+                                            
+                                                <ul class="sub-menu">
+                                                    
+                                                        <li>
+                                                            <a target="_blank" rel="noopener" href="https://candinya.com">
+                                                                
+                                                                作者博客
+                                                            </a>
+                                                        </li>
+                                                    
+                                                        <li>
+                                                            <a target="_blank" rel="noopener" href="https://github.com/Candinya/Kratos-Rebirth">
+                                                                
+                                                                项目链接
+                                                            </a>
+                                                        </li>
+                                                    
+                                                </ul>
+                                            
+                                        </li>
+                                    
+                                
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+            <header id="kratos-mobile-topnav" class="kratos-topnav">
+                <div class="container">
+                    <div class="color-logo"><a href="/">tthac09&#39;s blog</a></div>
+                    <div class="nav-toggle">
+                        <a class="kratos-nav-toggle js-kratos-nav-toggle">
+                            <i></i>
+                        </a>
+                    </div>
+                </div>
+            </header>
+        </div>
+        <div class="kratos-start kratos-hero-2">
+            <!-- <div class="kratos-overlay"></div> -->
+            <div class="kratos-cover kratos-cover-2 text-center">
+                <div class="desc desc2 animate-box">
+                    <a href="/">
+                        <h2>tthac09&#39;s blog</h2> <br />
+                        <span>月下初见</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div id="kratos-blog-post">
+            <div class="container">
+                <div id="main" class="row">
+                    
+
+        
+
+            <section class="col-md-8">
+
+        
+
+            <article itemscope itemtype="https://schema.org/Article">
+    
+    <link itemprop="mainEntityOfPage" href="https://tthac09.github.io/2019/11/17/csp2019-notes/">
+    <div class="kratos-hentry kratos-post-inner clearfix">
+        <header class="kratos-entry-header">
+            
+                <h1 class="kratos-entry-title text-center" itemprop="name headline">CSP2019滚粗记</h1>
+            
+            
+            <ul class="kratos-post-meta text-center">
+                <li><time datetime="2019-11-16T16:00:00.000Z" itemprop="datePublished"><i class="fa fa-calendar"></i> 2019-11-17</time></li>
+                <li itemprop="author" itemscope itemtype="https://schema.org/Person">
+                    <i class="fa fa-user"></i> 作者 <span itemprop="name">tthac09</span>
+                </li>
+                
+                    <li>
+                        <i class="fa fa-edit"></i> 
+                        
+                        
+                            ~1.78K
+                        
+                        字
+                    </li>
+                
+                
+            </ul>
+        </header>
+        <div class="kratos-post-content">
+            
+            <div id="expire-alert" class="alert alert-warning hidden" role="alert">
+                <div class="icon"><i class="fa fa-warning"></i></div>
+                <div class="text"><p>本文最后编辑于 <time datetime="1648903324675"></time> 前，其中的内容可能需要更新。</p></div>
+            </div>
+            
+            
+            
+                <div class="kratos-post-inner-toc toc-div-class" >
+                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%89%8D%E8%A8%80%E3%81%AE%E5%89%8D%E8%A8%80"><span class="toc-number">1.</span> <span class="toc-text">前言の前言</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%86%99%E5%9C%A8%E5%89%8D%E9%9D%A2"><span class="toc-number">2.</span> <span class="toc-text">写在前面</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#duang"><span class="toc-number">3.</span> <span class="toc-text">duang</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E2%80%94DAY-%EF%BC%9F%EF%BC%9F%EF%BC%9F%E2%80%94"><span class="toc-number">3.1.</span> <span class="toc-text">—DAY - ？？？—</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E2%80%94DAY-%EF%BC%9F%EF%BC%9F%EF%BC%9F%E2%80%94-1"><span class="toc-number">3.2.</span> <span class="toc-text">—DAY - ？？？—</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E2%80%94DAY-%EF%BC%9F%EF%BC%9F%EF%BC%9F%E2%80%94-2"><span class="toc-number">3.3.</span> <span class="toc-text">—DAY - ？？？—</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E2%80%94DAY-0-%E2%80%94"><span class="toc-number">3.4.</span> <span class="toc-text">—DAY 0 —</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E2%80%94DAY-1-%E2%80%94"><span class="toc-number">3.5.</span> <span class="toc-text">—DAY 1 —</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E2%80%94DAY-2-%E2%80%94"><span class="toc-number">3.6.</span> <span class="toc-text">—DAY 2 —</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%90%8E%E8%AE%B0"><span class="toc-number">4.</span> <span class="toc-text">后记</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Updata"><span class="toc-number">4.1.</span> <span class="toc-text">Updata</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B1%82%E9%94%A6%E9%B2%A4"><span class="toc-number"></span> <span class="toc-text">求锦鲤</span></a>
+                </div>
+            
+            <hr />
+            <div itemprop="articleBody"><pre><code>                                 作于2019/11/17夜
+</code></pre><h3 id="前言の前言"><a href="#前言の前言" class="headerlink" title="前言の前言"></a>前言の前言</h3><p>震惊！！！kkk竟然将本游记收录在了入门组<del>or both</del>里面，怪我标题没写清楚。。。</p>
+<p>既然被收录了，那我肯定要稍微修改一下，尽管阅读量感人</p>
+<p>这是本蒟蒻早期博客文章，更多侧重描写竞赛过程的见闻，对题目描述较少<del>几乎没有</del>。</p>
+<h3 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h3><p>去年noip游记<del>豪言壮志</del>一本正经说了什么再战紫金，这回彻底滚粗了</p>
+<h3 id="duang"><a href="#duang" class="headerlink" title="duang"></a>duang</h3><h4 id="—DAY-？？？—"><a href="#—DAY-？？？—" class="headerlink" title="—DAY - ？？？—"></a>—DAY - ？？？—</h4><p>啥子！！！</p>
+<p>noip没了？？？</p>
+<p>csp来喽！！！？？？</p>
+<h4 id="—DAY-？？？—-1"><a href="#—DAY-？？？—-1" class="headerlink" title="—DAY - ？？？—"></a>—DAY - ？？？—</h4><p>第</p>
+<p>一</p>
+<p>轮</p>
+<p><del>我不是故意的，我是有意的</del></p>
+<p><del>初赛少说点</del></p>
+<p>不路径压缩的假并查集、二进制状压dp，<del>祖宗好</del></p>
+<p>某些机试地区可真爽，还能开dev</p>
+<h4 id="—DAY-？？？—-2"><a href="#—DAY-？？？—-2" class="headerlink" title="—DAY - ？？？—"></a>—DAY - ？？？—</h4><p>伟大的30天停课计划开始了，本来准备开个记录博的，可是以为种种原因<del>我太懒了</del>，就放弃了，a了不少黑紫题</p>
+<p>期中考试不考感觉真好</p>
+<h4 id="—DAY-0-—"><a href="#—DAY-0-—" class="headerlink" title="—DAY 0 —"></a>—DAY 0 —</h4><p>报到没啥好说的，晚上背板子到12点，背了SP，tarjan，扩欧巴啦<del>巴</del>啦</p>
+<h4 id="—DAY-1-—"><a href="#—DAY-1-—" class="headerlink" title="—DAY 1 —"></a>—DAY 1 —</h4><p>为啥是排桌！差评</p>
+<p>为啥我在最边上！差评</p>
+<p>为啥没有躺椅！差评</p>
+<p>监考小姐姐超nice！好评</p>
+<p>CCF啥时候内存限制改用MiB了</p>
+<p>老爷机内存啥时候32G了，还i7的cpu，<del>dzd突然大方了</del></p>
+<p>T1 神魔玩意儿，数据范围这么大，类似二分，O(logn)解决，开始用了ll，实测过不了最大点，改ull，不过我ull输出用的%d，担心了好一阵纸</p>
+<p>T2 看出了字符串匹配的模样，写栈加树形dp，大数据真好，114514，<del>出分后才发现，这数据相当弱啊啊啊啊啊</del></p>
+<p>T3 暴力，妄图打表找规律，无果</p>
+<p>期望得分<del>100+80+10</del> 0+0+0</p>
+<p><del>下午就去水游城水平方那边浪了qaq</del></p>
+<p>D1考了两棵树，惨绝人寰，盲猜D2一动规一图论一数学，晚上宾馆继续奶图论和数学</p>
+<h4 id="—DAY-2-—"><a href="#—DAY-2-—" class="headerlink" title="—DAY 2 —"></a>—DAY 2 —</h4><p>还是那个超nice的监考小姐姐，继续好评</p>
+<p>看了眼目录T2内存1GiB，2s，T3 3s，呵呵</p>
+<p>盲猜T1是dp，开了5维，然后颓废，烧这么多菜也不怕撑死。1.5小时依旧在看T1，2小时的时候<del>巴啦啦能量—沙啰沙啰—小魔仙大哭</del>，辛酸的泪水。。。2.5小时时几次冲动想砸键盘，<del>要不是小姐姐来查文件夹，哼！</del> </p>
+<p>此时离结束还有不到一个小时<br>在我心态还没彻底崩裂前，暴力dfs处理T1</p>
+<p>T2直接放弃，补条件说保证答案小于10^18，默默写下一个“滚”字。布鲁特福斯dfs解决，还开了个数组记忆化优化一下，以为能多过几个点，然并卵</p>
+<p>T3暴躁输样例，又是树，还是树的重心，我没记错的话，重心是联赛考点吗，<del>不过csp与noip没有关系</del>事实证明是我记错了，重心居然是入门难度，毫无印象</p>
+<p>期望得分24+24+0</p>
+<p><del>下午去总统府浪荡</del></p>
+<p>晚上看洛谷发现，D2俩动规一树，俩紫一黑。。。</p>
+<p>浴谷估分100+10+10+32+16+0</p>
+<p>其他网站没敢试</p>
+<p>D1T2写炸了，200都没，废了</p>
+<h3 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h3><p>就先这样了</p>
+<p>updata后：<br>洛谷上，虽然难度不断下调，但基本维持在紫黑水平，忽诗兴大发，<del>欲吟诗一首</del></p>
+<p>三棵oi树，顶个ioi。<br>吊死无数oier，大虐天下寒士俱心酸。<br>无图论，无数学。<br>oi之路，难于上青天</p>
+<p><del>鼓掌鼓掌鼓掌</del></p>
+<p><del>素质三联</del></p>
+<p>蒟蒻彻底残废</p>
+<h4 id="Updata"><a href="#Updata" class="headerlink" title="Updata"></a>Updata</h4><p>2019/12/2 凌晨</p>
+<p>出分日，打卡凶，特殊方法（bushi）查了分，100+10+10+32+8+0=160，f <em> </em> k,D1T2似乎不严的数据依旧没能救我，D2T2数据似乎变严了，卡了我两个点，少了8分，彻底滚粗</p>
+<p>2019/12/14 晚</p>
+<p>终于有时间更新了。<del>还不是因为我太懒了</del>。10日出奖，ccf居然历史上第一次不咕，还提前了</p>
+<p>js1==250，全国基准165，都跟我没啥关系了</p>
+<p>ccf的证书又双叒叕涨价了</p>
+<p>11日 震惊！！！js又双叒叕发省奖了，<del>省一</del>，然并卵</p>
+<p>哦，对了，在某班主任<del>逼迫</del>推荐下，以2==成绩报了THUWC和PKUWC，呵呵</p>
+<p>我在此立下flag，要是能过初审，我就<del>Lolita</del>拍Volg，<del>不存在的</del></p>
+<p>对正文及后记部分updata</p>
+<p><del>其实今天的updata前，我刚打完一场usaco，感觉连chn小学题都不如，忽然想生在usa</del></p>
+<p>明天还要考信息技术合格考试，好烦</p>
+<h2 id="求锦鲤"><a href="#求锦鲤" class="headerlink" title="求锦鲤"></a>求锦鲤</h2><hr>
+<p>此博大概也许应该可能坟了        ———2019/12/14 22：04</p>
+<hr>
+<p>补写了前言の前言             ———2020/7/22</p>
+</div>
+        </div>
+        
+            <div class="kratos-copyright text-center clearfix">
+                <h5 itemprop="copyrightNotice">本作品采用 <a rel="license nofollow" target="_blank" href="https://creativecommons.org/licenses/by-nc-nd/4.0/">知识共享署名-非商业性使用-禁止演绎 4.0 国际许可协议</a> 进行许可</h5>
+            </div>
+        
+        <footer class="kratos-entry-footer clearfix">
+            
+                <div class="post-like-donate text-center clearfix" id="post-like-donate">
+                
+                
+                    <a class="share" href="javascript:;"><i class="fa fa-share-alt"></i> 分享</a>
+                    <div class="share-wrap" style="display: none;">
+    <div class="share-group">
+        <a href="javascript:;" class="share-plain qq" onclick="share('qq');" rel="nofollow">
+            <div class="icon-wrap">
+                <i class="fa fa-qq"></i>
+            </div>
+        </a>
+        <a href="javascript:;" class="share-plain qzone" onclick="share('qzone');" rel="nofollow">
+            <div class="icon-wrap">
+                <i class="fa fa-star"></i>
+            </div>
+        </a>
+        <a href="javascript:;" class="share-plain weixin pop style-plain" rel="nofollow">
+            <div class="icon-wrap">
+                <i class="fa fa-weixin"></i>
+            </div>
+            <div class="share-int">
+                <div class="qrcode" id="wechat-qr"></div>
+                <p>打开微信“扫一扫”，打开网页后点击屏幕右上角分享按钮</p>
+            </div>
+        </a>
+        <a href="javascript:;" class="share-plain weibo" onclick="share('weibo');" rel="nofollow">
+            <div class="icon-wrap">
+                <i class="fa fa-weibo"></i>
+            </div>
+        </a>
+        <a href="javascript:;" class="share-plain facebook style-plain" onclick="share('facebook');" rel="nofollow">
+            <div class="icon-wrap">
+                <i class="fa fa-facebook"></i>
+            </div>
+        </a>
+        <a href="javascript:;" class="share-plain twitter style-plain" onclick="share('twitter');" rel="nofollow">
+            <div class="icon-wrap">
+                <i class="fa fa-twitter"></i>
+            </div>
+        </a>
+    </div>
+    <script type="text/javascript">
+        $(()=>{
+            new QRCode("wechat-qr", {
+                text: "https://tthac09.github.io/2019/11/17/csp2019-notes/",
+                width: 150,
+                height: 150,
+                correctLevel : QRCode.CorrectLevel.H
+            });
+        });
+        function share(dest) {
+            const qqBase        = "https://connect.qq.com/widget/shareqq/index.html?";
+            const weiboBase     = "https://service.weibo.com/share/share.php?";
+            const qzoneBase     = "https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?";
+            const facebookBase  = "https://www.facebook.com/sharer/sharer.php?";
+            const twitterBase   = "https://twitter.com/intent/tweet?";
+            const hostUrl       = "https://tthac09.github.io/2019/11/17/csp2019-notes/";
+            const title         = "「CSP2019滚粗记」";
+            const excerpt       = `                                 作于2019/11/17夜
+前言の前言震惊！！！kkk竟然将本游记收录在了入门组or both里面，怪我标题没写清楚。。。
+既然被收录了，那我肯定要稍微修改一下，尽管阅...`;
+            let _URL;
+            switch (dest) {
+                case "qq"       : _URL = qqBase+"url="+hostUrl+"&title="+title+"&desc=&summary="+excerpt+"&site=cxpy";     break;
+                case "weibo"    : _URL = weiboBase+"url="+hostUrl+"&title="+title+excerpt;                                 break;
+                case "qzone"    : _URL = qzoneBase+"url="+hostUrl+"&title="+title+"&desc=&summary="+excerpt+"&site=cxpy";  break;
+                case "facebook" : _URL = facebookBase+"u="+hostUrl;                                                        break;
+                case "twitter"  : _URL = twitterBase+"text="+title+excerpt+"&url="+hostUrl;                                break;
+            }
+            window.open(_URL);
+        };
+    </script>
+</div>
+                
+                </div>
+            
+            <div class="footer-tag clearfix">
+                <div class="pull-left">
+                <i class="fa fa-tags"></i>
+                    <a class="tag-none-link" href="/tags/CSP-J-S/" rel="tag">CSP-J/S</a>
+                </div>
+                <div class="pull-date">
+                    <time datetime="2022-04-02T12:42:04.675Z" itemprop="dateModified">最后编辑：2022-04-02</time>
+                </div>
+            </div>
+        </footer>
+    </div>
+    
+        <nav class="navigation post-navigation clearfix" role="navigation">
+            
+            <div class="nav-previous clearfix">
+                <a title=" Noip2018杂记" href="/2019/01/25/noip2018-notes/">&lt; 上一篇</a>
+            </div>
+            
+            
+            <div class="nav-next clearfix">
+                <a title=" NOI Online游记（？？？）" href="/2020/03/11/noi-online-notes/">下一篇 &gt;</a>
+            </div>
+            
+        </nav>
+    
+    
+</article>
+
+        
+
+            </section>
+
+        
+
+                
+            
+
+<section id="kratos-widget-area" class="col-md-4 hidden-xs hidden-sm">
+    <!-- 文章和页面根据splitter来分割，没有的话就从头开始设置为sticky -->
+    
+    
+                <aside id="krw-about" class="widget widget-kratos-about clearfix">
+    <div class="photo-background"></div>
+    <div class="photo-wrapper clearfix">
+        <div class="photo-wrapper-tip text-center">
+            <img class="about-photo" src="/images/logo.webp" loading="lazy" decoding="auto" />
+        </div>
+    </div>
+    <div class="textwidget">
+        <p class="text-center"></p>
+    </div>
+    <div class="site-meta">
+        <a class="meta-item" href="/archives/">
+            <span class="title">
+                文章
+            </span>
+            <span class="count">
+                18
+            </span>
+        </a>
+        <a class="meta-item" href="/categories/">
+            <span class="title">
+                分类
+            </span>
+            <span class="count">
+                3
+            </span>
+        </a>
+        <a class="meta-item" href="/tags/">
+            <span class="title">
+                标签
+            </span>
+            <span class="count">
+                9
+            </span>
+        </a>
+    </div>
+</aside>
+            
+                    <div class="sticky-area">
+                
+                    <aside id="krw-toc" class="widget widget-kratos-toc clearfix toc-div-class" >
+    <div class="photo-background"></div>
+    <h4 class="widget-title no-after">
+        <i class="fa fa-compass"></i>
+        文章目录
+        <span class="toc-progress-bar" role="progressbar" aria-label="阅读进度："></span>
+    </h4>
+    <div class="textwidget">
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%89%8D%E8%A8%80%E3%81%AE%E5%89%8D%E8%A8%80"><span class="toc-text">前言の前言</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%86%99%E5%9C%A8%E5%89%8D%E9%9D%A2"><span class="toc-text">写在前面</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#duang"><span class="toc-text">duang</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E2%80%94DAY-%EF%BC%9F%EF%BC%9F%EF%BC%9F%E2%80%94"><span class="toc-text">—DAY - ？？？—</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E2%80%94DAY-%EF%BC%9F%EF%BC%9F%EF%BC%9F%E2%80%94-1"><span class="toc-text">—DAY - ？？？—</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E2%80%94DAY-%EF%BC%9F%EF%BC%9F%EF%BC%9F%E2%80%94-2"><span class="toc-text">—DAY - ？？？—</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E2%80%94DAY-0-%E2%80%94"><span class="toc-text">—DAY 0 —</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E2%80%94DAY-1-%E2%80%94"><span class="toc-text">—DAY 1 —</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E2%80%94DAY-2-%E2%80%94"><span class="toc-text">—DAY 2 —</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%90%8E%E8%AE%B0"><span class="toc-text">后记</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Updata"><span class="toc-text">Updata</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B1%82%E9%94%A6%E9%B2%A4"><span class="toc-text">求锦鲤</span></a>
+    </div>
+</aside>
+                
+                
+  <aside id="krw-categories" class="widget widget-kratos-categories clearfix">
+    <h4 class="widget-title"><i class="fa fa-folder"></i>分类目录</h4>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%8A%80%E6%9C%AF%E6%8C%87%E5%8C%97/">技术指北</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%9D%82%E8%AE%B0/">杂记</a><span class="category-list-count">11</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E9%A2%98%E8%A7%A3/">题解</a><span class="category-list-count">5</span></li></ul>
+  </aside>
+
+
+            
+                
+  <aside id="krw-tags" class="widget widget-kratos-tags clearfix">
+    <h4 class="widget-title"><i class="fa fa-tags"></i>标签聚合</h4>
+      <div class="tag-clouds">
+        <a href="/tags/APIO/" style="font-size: 0.6em;">APIO</a> <a href="/tags/CSP-J-S/" style="font-size: 0.67em;">CSP-J/S</a> <a href="/tags/ICPC/" style="font-size: 0.6em;">ICPC</a> <a href="/tags/NOI-Online/" style="font-size: 0.73em;">NOI Online</a> <a href="/tags/NOIP/" style="font-size: 0.6em;">NOIP</a> <a href="/tags/NOIp/" style="font-size: 0.6em;">NOIp</a> <a href="/tags/waline/" style="font-size: 0.6em;">waline</a> <a href="/tags/%E4%BF%A1%E6%81%AF%E8%8D%89%E5%A0%82/" style="font-size: 0.8em;">信息草堂</a> <a href="/tags/%E6%B4%9B%E8%B0%B7/" style="font-size: 0.67em;">洛谷</a>
+      </div>
+  </aside>
+
+            
+                
+  <aside id="krw-posts" class="widget widget-kratos-posts">
+  <h4 class="widget-title"><i class="fa fa-file"></i>最新文章</h4>
+  <div class="tab-content">
+      <ul class="list-group">
+        
+        
+          
+          
+            <a class="list-group-item" href="/2023/05/24/icpc2023-xian-invitational-notes/"><i class="fa  fa-book"></i> ICPC2023西安邀请赛游记</a>
+            
+          
+        
+          
+          
+            <a class="list-group-item" href="/2022/08/20/hello-world/"><i class="fa  fa-book"></i> Hello World</a>
+            
+          
+        
+          
+          
+            <a class="list-group-item" href="/2022/04/02/waline-tutorial/"><i class="fa  fa-book"></i> waline食用教程</a>
+            
+          
+        
+          
+          
+            <a class="list-group-item" href="/2021/11/02/key-xxct2021-Slithery%E2%80%98s-table-tennis/"><i class="fa  fa-book"></i> 【题解】 信息草堂2021 Slithery的乒乓球</a>
+            
+          
+        
+          
+          
+            <a class="list-group-item" href="/2021/10/12/xxct2021-notes/"><i class="fa  fa-book"></i> 信息草堂2021摆烂纪实</a>
+            
+          
+        
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+      </ul>
+  </div>
+  </aside>
+
+            
+    </div>
+</section>
+        
+        </div>
+    </div>
+</div>
+<footer>
+    <div id="footer"  class="ap-lrc"  >
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3 footer-list text-center">
+                    <ul class="kratos-social-icons">
+                        <!-- Keep for compatibility -->
+                        
+                        <li><a href="mailto:tthac09@outlook.com"><i class="fa fa-envelope"></i></a></li>
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <!-- New links -->
+                        
+                    </ul>
+                    <ul class="kratos-copyright">
+                        <div>
+                            <li>&copy; 2023 tthac09's blog 版权所有.</li>
+                            <li>本站已运行<span id="span_dt">Loading...</span></li>
+                        </div>
+                        <div>
+                            <li>Theme <a href="https://github.com/Candinya/Kratos-Rebirth" target="_blank">Kratos:Rebirth</a></li>
+                            <li>Site built with&nbsp;<i class="fa fa-heart throb" style="color:#d43f57"></i>&nbsp;by tthac09.</li>
+                        </div>
+                        <div>
+                            <li>Powered by <a href="https://hexo.io" target="_blank" rel="nofollow">Hexo</a></li>
+                            <li>Hosted on <a href="https://github.io" target="_blank">Github Pages</a></li>
+                        </div>
+                        <div>
+                            
+                            
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="kr-tool text-center">
+            <div class="tool">
+                
+                    <div class="box search-box">
+                        <a href="/search/">
+                            <span class="fa fa-search"></span>
+                        </a>
+                    </div>
+                
+                
+                    <div class="box theme-box" id="darkmode-switch">
+                        <span class="fa fa-adjust"></span>
+                    </div>
+                
+                
+                
+            </div>
+            <div class="box gotop-box">
+                <span class="fa fa-chevron-up"></span>
+            </div>
+        </div>
+    </div>
+</footer>
+</div>
+</div>
+
+        <script defer src="/vendors/bootstrap@3.3.4/dist/js/bootstrap.min.js"></script>
+<script defer src="/vendors/nprogress@0.2.0/nprogress.js"></script>
+<script>
+    if (!window.kr) {
+        window.kr = {};
+    }
+    window.kr.notMobile = (!(navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i)));
+    window.kr.siteRoot = "/";
+</script>
+
+
+    <script async src="/js/candy.min.js"></script>
+
+
+
+    <script defer src="/vendors/aplayer@1.10.1/dist/APlayer.min.js"></script>
+    
+    <script defer src="/vendors/meting@2.0.1/dist/Meting.min.js"></script>
+    <meting-js
+        server="tencent"
+        type="playlist"
+        id="8365838786"
+        order="random"
+        fixed="true"
+    >
+    </meting-js>
+
+
+
+    <script defer src="/vendors/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+<script defer src="/js/kratosr.min.js"></script>
+<script defer src="/js/pjax.min.js"></script>
+
+
+
+<!-- Extra support for third-party plguins  -->
+
+
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+<!--script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</body>
+</html>
