@@ -259,6 +259,19 @@
                     </li>
                 
                 
+                    
+                        <li>
+                            <i class="fa fa-eye"></i>
+                            <span data-path="/2023/05/24/icpc2023-xian-invitational-notes/" class="waline-pageview-count"> </span> 次阅读
+                        </li>
+                    
+                    
+                        <li>
+                            <i class="fa fa-commenting-o"></i>
+                            <span data-path="/2023/05/24/icpc2023-xian-invitational-notes/" class="waline-comment-count"> </span> 条评论
+                        </li>
+                    
+                
             </ul>
         </header>
         <div class="kratos-post-content">
@@ -431,6 +444,28 @@ Day0 24 May 2023各位山湖区的大佬们今天飞去西...`;
             
         </nav>
     
+    
+        <div id="w-comments" class="post-comments"></div>
+<link rel="stylesheet" href="/vendors/@waline/client@2.14.1/dist/waline.css" />
+<script>
+    var load_comm = () => {
+        const init = () => {
+            Waline.init(Object.assign({
+                el: '#w-comments',
+                path: '/2023/05/24/icpc2023-xian-invitational-notes/',
+                dark: 'html[data-theme="dark"]',
+            }, JSON.parse('{"serverURL":"https://blog-wa-com.netlify.app/.netlify/functions/comment","comment":true,"pageview":true}')));
+        }
+        if (typeof Waline === 'undefined') {
+            const src = '/vendors/@waline/client@2.14.1/dist/waline.js';
+            $.getScript(src, init);
+        } else {
+            init();
+        }
+    };
+</script>
+<noscript>Please enable JavaScript to view the <a target="_blank" rel="noopener" href="https://waline.js.org/">comments powered by Waline.</a></noscript>
+
     
 </article>
 

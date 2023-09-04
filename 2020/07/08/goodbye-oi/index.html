@@ -258,6 +258,19 @@
                     </li>
                 
                 
+                    
+                        <li>
+                            <i class="fa fa-eye"></i>
+                            <span data-path="/2020/07/08/goodbye-oi/" class="waline-pageview-count"> </span> 次阅读
+                        </li>
+                    
+                    
+                        <li>
+                            <i class="fa fa-commenting-o"></i>
+                            <span data-path="/2020/07/08/goodbye-oi/" class="waline-comment-count"> </span> 条评论
+                        </li>
+                    
+                
             </ul>
         </header>
         <div class="kratos-post-content">
@@ -542,6 +555,28 @@
             
         </nav>
     
+    
+        <div id="w-comments" class="post-comments"></div>
+<link rel="stylesheet" href="/vendors/@waline/client@2.14.1/dist/waline.css" />
+<script>
+    var load_comm = () => {
+        const init = () => {
+            Waline.init(Object.assign({
+                el: '#w-comments',
+                path: '/2020/07/08/goodbye-oi/',
+                dark: 'html[data-theme="dark"]',
+            }, JSON.parse('{"serverURL":"https://blog-wa-com.netlify.app/.netlify/functions/comment","comment":true,"pageview":true}')));
+        }
+        if (typeof Waline === 'undefined') {
+            const src = '/vendors/@waline/client@2.14.1/dist/waline.js';
+            $.getScript(src, init);
+        } else {
+            init();
+        }
+    };
+</script>
+<noscript>Please enable JavaScript to view the <a target="_blank" rel="noopener" href="https://waline.js.org/">comments powered by Waline.</a></noscript>
+
     
 </article>
 
