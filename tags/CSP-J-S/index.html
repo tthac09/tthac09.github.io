@@ -402,17 +402,17 @@
 <link rel="stylesheet" href="/vendors/@waline/client@2.14.1/dist/waline.css" />
 <script>
     var load_comm = () => {
-        const locale = {
-            mail: '邮箱（选填）',
-            link: '个人网址（选填）',
-            placeholder: '说说点什么喵～o(=•ェ•=)  无需登录也完全没问题哦～  您的评论可能需经审核后展示,请勿重复提交  填写邮箱后可以收到回复提醒呢 评论请参阅“关于-评论指南与隐私指引”'
-        };
         const init = () => {
             Waline.init(Object.assign({
                 el: '#w-comments',
                 path: '/tags/CSP-J-S/index.html',
                 dark: 'html[data-theme="dark"]',
-            }, JSON.parse('{"serverURL":"https://blog-wa-com.netlify.app/.netlify/functions/comment","comment":true,"pageview":true}')));
+            }, JSON.parse('{"serverURL":"https://blog-wa-com.netlify.app/.netlify/functions/comment","comment":true,"pageview":true}')),
+                locale = {
+                    mail: '邮箱（选填）',
+                    link: '个人网址（选填）',
+                    placeholder: '说说点什么喵～o(=•ェ•=)  无需登录也完全没问题哦～  您的评论可能需经审核后展示,请勿重复提交  填写邮箱后可以收到回复提醒呢 评论请参阅“关于-评论指南与隐私指引”'
+                });
         }
         if (typeof Waline === 'undefined') {
             const src = '/vendors/@waline/client@2.14.1/dist/waline.js';
