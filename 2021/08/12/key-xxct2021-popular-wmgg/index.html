@@ -413,7 +413,7 @@
             
             
             <div class="nav-next clearfix">
-                <a title=" 【题解】 信息草堂2021 烦恼的Slithery" href="/2021/08/12/key-xxct2021-troubled-Slithery/">下一篇 &gt;</a>
+                <a title=" 信息草堂2021摆烂纪实" href="/2021/10/12/xxct2021-notes/">下一篇 &gt;</a>
             </div>
             
         </nav>
@@ -428,12 +428,12 @@
                 el: '#w-comments',
                 path: '/2021/08/12/key-xxct2021-popular-wmgg/',
                 dark: 'html[data-theme="dark"]',
-            }, JSON.parse('{"serverURL":"https://blog-wa-com.netlify.app/.netlify/functions/comment","comment":true,"pageview":true}')),
-                {locale : {
+                locale : {
                     mail: '邮箱（选填）',
                     link: '个人网址（选填）',
                     placeholder: '说说点什么喵～o(=•ェ•=)  无需登录也完全没问题哦～  您的评论可能需经审核后展示,请勿重复提交  填写邮箱后可以收到回复提醒呢 评论请参阅“关于-评论指南与隐私指引”'
-                }});
+                },
+            }, JSON.parse('{"serverURL":"https://blog-wa-com.netlify.app/.netlify/functions/comment","comment":true,"pageview":true}')));
         }
         if (typeof Waline === 'undefined') {
             const src = '/vendors/@waline/client@2.14.1/dist/waline.js';
