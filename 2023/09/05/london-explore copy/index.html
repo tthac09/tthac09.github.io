@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <link rel="icon" href="/images/logo.webp">
   
-  <title>【题解】 洛谷P4520 [COCI2017-2018 Contest4] Izbori | tthac09&#39;s blog</title>
+  <title>【前序】在典雅与学术的交织中探寻 | tthac09&#39;s blog</title>
   
   <meta name="author" content="tthac09" />
   <meta http-equiv="Cache-Control" content="no-transform" />
@@ -15,22 +15,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
   <meta name="format-detection" content="telphone=no, email=no" />
   
-    <meta name="keywords" content="洛谷" />
+    <meta name="keywords" content="London" />
   
-  <meta name="description" content="题意原题链接 一次选举，$N$ 个县给 $M$ 个候选人投票，给出每个县的投票候选序列，问在没有人退出选举的情况下获胜的人，并求最少劝说多少个人退出时，编号为 $K$ 的候选人将获胜。如果多人得票数并列第一，则编号小的人获胜。 分析对于第一个问题，因为没有候选人退出，我们只需要考虑每个县最优先投的那个人，统计每个人的得票数即可。 对于第二个问题，考虑到 $1 \leq M \leq 15$，我们似">
+  <meta name="description" content="本文章不适用知识共享署名-非商业性使用-禁止演绎 4.0 国际许可协议（即 BY-NC-ND 4.0 国际许可协议），所有使用均需得到书面许可禁止南京航空航天大学及南京航空航天大学长空学院在任何媒介以任何形式复制、演绎、分享、发行本作品 早晨九时，雨后初晴。空气中弥漫着蔷薇的味道，展览路上各种肤色的学生有说有笑。我背着电脑捧着咖啡，漫步在谢菲尔德道上。左行的车辆，红砖砌的房屋，满目新奇与未知中，一">
 <meta property="og:type" content="article">
-<meta property="og:title" content="【题解】 洛谷P4520 [COCI2017-2018 Contest4] Izbori">
-<meta property="og:url" content="https://tthac09.github.io/2020/08/28/key-luogu-P4520/index.html">
+<meta property="og:title" content="【前序】在典雅与学术的交织中探寻">
+<meta property="og:url" content="https://tthac09.github.io/2023/09/05/london-explore%20copy/index.html">
 <meta property="og:site_name" content="tthac09&#39;s blog">
-<meta property="og:description" content="题意原题链接 一次选举，$N$ 个县给 $M$ 个候选人投票，给出每个县的投票候选序列，问在没有人退出选举的情况下获胜的人，并求最少劝说多少个人退出时，编号为 $K$ 的候选人将获胜。如果多人得票数并列第一，则编号小的人获胜。 分析对于第一个问题，因为没有候选人退出，我们只需要考虑每个县最优先投的那个人，统计每个人的得票数即可。 对于第二个问题，考虑到 $1 \leq M \leq 15$，我们似">
+<meta property="og:description" content="本文章不适用知识共享署名-非商业性使用-禁止演绎 4.0 国际许可协议（即 BY-NC-ND 4.0 国际许可协议），所有使用均需得到书面许可禁止南京航空航天大学及南京航空航天大学长空学院在任何媒介以任何形式复制、演绎、分享、发行本作品 早晨九时，雨后初晴。空气中弥漫着蔷薇的味道，展览路上各种肤色的学生有说有笑。我背着电脑捧着咖啡，漫步在谢菲尔德道上。左行的车辆，红砖砌的房屋，满目新奇与未知中，一">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://tthac09.github.io/images/logo.webp">
-<meta property="article:published_time" content="2020-08-27T16:00:00.000Z">
-<meta property="article:modified_time" content="2022-04-02T12:25:54.580Z">
+<meta property="og:image" content="https://tthac09.github.io/2023/09/05/london-explore%20copy/DSI.webp">
+<meta property="article:published_time" content="2023-09-04T16:00:00.000Z">
+<meta property="article:modified_time" content="2023-09-14T08:34:13.825Z">
 <meta property="article:author" content="tthac09">
-<meta property="article:tag" content="洛谷">
+<meta property="article:tag" content="London">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://tthac09.github.io/images/logo.webp">
+<meta name="twitter:image" content="https://tthac09.github.io/2023/09/05/london-explore%20copy/DSI.webp">
   
   <!-- 站点验证相关 -->
   
@@ -236,15 +236,15 @@
 
             <article itemscope itemtype="https://schema.org/Article">
     
-    <link itemprop="mainEntityOfPage" href="https://tthac09.github.io/2020/08/28/key-luogu-P4520/">
+    <link itemprop="mainEntityOfPage" href="https://tthac09.github.io/2023/09/05/london-explore%20copy/">
     <div class="kratos-hentry kratos-post-inner clearfix">
         <header class="kratos-entry-header">
             
-                <h1 class="kratos-entry-title text-center" itemprop="name headline">【题解】 洛谷P4520 [COCI2017-2018 Contest4] Izbori</h1>
+                <h1 class="kratos-entry-title text-center" itemprop="name headline">【前序】在典雅与学术的交织中探寻</h1>
             
             
             <ul class="kratos-post-meta text-center">
-                <li><time datetime="2020-08-27T16:00:00.000Z" itemprop="datePublished"><i class="fa fa-calendar"></i> 2020-08-28</time></li>
+                <li><time datetime="2023-09-04T16:00:00.000Z" itemprop="datePublished"><i class="fa fa-calendar"></i> 2023-09-05</time></li>
                 <li itemprop="author" itemscope itemtype="https://schema.org/Person">
                     <i class="fa fa-user"></i> 作者 <span itemprop="name">tthac09</span>
                 </li>
@@ -253,7 +253,7 @@
                         <i class="fa fa-edit"></i> 
                         
                         
-                            ~2.54K
+                            ~1.89K
                         
                         字
                     </li>
@@ -262,13 +262,13 @@
                     
                         <li>
                             <i class="fa fa-eye"></i>
-                            <span data-path="/2020/08/28/key-luogu-P4520/" class="waline-pageview-count"> </span> 次阅读
+                            <span data-path="/2023/09/05/london-explore%20copy/" class="waline-pageview-count"> </span> 次阅读
                         </li>
                     
                     
                         <li>
                             <i class="fa fa-commenting-o"></i>
-                            <span data-path="/2020/08/28/key-luogu-P4520/" class="waline-comment-count"> </span> 条评论
+                            <span data-path="/2023/09/05/london-explore%20copy/" class="waline-comment-count"> </span> 条评论
                         </li>
                     
                 
@@ -278,35 +278,53 @@
             
             <div id="expire-alert" class="alert alert-warning hidden" role="alert">
                 <div class="icon"><i class="fa fa-warning"></i></div>
-                <div class="text"><p>本文最后编辑于 <time datetime="1648902354580"></time> 前，其中的内容可能需要更新。</p></div>
+                <div class="text"><p>本文最后编辑于 <time datetime="1694680453825"></time> 前，其中的内容可能需要更新。</p></div>
             </div>
             
             
             
                 <div class="kratos-post-inner-toc toc-div-class" >
-                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%A2%98%E6%84%8F"><span class="toc-number">1.</span> <span class="toc-text">题意</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%86%E6%9E%90"><span class="toc-number">2.</span> <span class="toc-text">分析</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BB%A3%E7%A0%81"><span class="toc-number">3.</span> <span class="toc-text">代码</span></a></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9C%AC%E6%96%87%E7%AB%A0%E4%B8%8D%E9%80%82%E7%94%A8%E7%9F%A5%E8%AF%86%E5%85%B1%E4%BA%AB%E7%BD%B2%E5%90%8D-%E9%9D%9E%E5%95%86%E4%B8%9A%E6%80%A7%E4%BD%BF%E7%94%A8-%E7%A6%81%E6%AD%A2%E6%BC%94%E7%BB%8E-4-0-%E5%9B%BD%E9%99%85%E8%AE%B8%E5%8F%AF%E5%8D%8F%E8%AE%AE%EF%BC%88%E5%8D%B3-BY-NC-ND-4-0-%E5%9B%BD%E9%99%85%E8%AE%B8%E5%8F%AF%E5%8D%8F%E8%AE%AE%EF%BC%89%EF%BC%8C%E6%89%80%E6%9C%89%E4%BD%BF%E7%94%A8%E5%9D%87%E9%9C%80%E5%BE%97%E5%88%B0%E4%B9%A6%E9%9D%A2%E8%AE%B8%E5%8F%AF"><span class="toc-number">1.</span> <span class="toc-text">本文章不适用知识共享署名-非商业性使用-禁止演绎 4.0 国际许可协议（即 BY-NC-ND 4.0 国际许可协议），所有使用均需得到书面许可</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%A6%81%E6%AD%A2%E5%8D%97%E4%BA%AC%E8%88%AA%E7%A9%BA%E8%88%AA%E5%A4%A9%E5%A4%A7%E5%AD%A6%E5%8F%8A%E5%8D%97%E4%BA%AC%E8%88%AA%E7%A9%BA%E8%88%AA%E5%A4%A9%E5%A4%A7%E5%AD%A6%E9%95%BF%E7%A9%BA%E5%AD%A6%E9%99%A2%E5%9C%A8%E4%BB%BB%E4%BD%95%E5%AA%92%E4%BB%8B%E4%BB%A5%E4%BB%BB%E4%BD%95%E5%BD%A2%E5%BC%8F%E5%A4%8D%E5%88%B6%E3%80%81%E6%BC%94%E7%BB%8E%E3%80%81%E5%88%86%E4%BA%AB%E3%80%81%E5%8F%91%E8%A1%8C%E6%9C%AC%E4%BD%9C%E5%93%81"><span class="toc-number">2.</span> <span class="toc-text">禁止南京航空航天大学及南京航空航天大学长空学院在任何媒介以任何形式复制、演绎、分享、发行本作品</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AF%BE"><span class="toc-number">2.1.</span> <span class="toc-text">课</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%BA"><span class="toc-number">2.2.</span> <span class="toc-text">人</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9F%8E"><span class="toc-number">2.3.</span> <span class="toc-text">城</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9C%AC%E6%96%87%E7%AB%A0%E4%B8%8D%E9%80%82%E7%94%A8%E7%9F%A5%E8%AF%86%E5%85%B1%E4%BA%AB%E7%BD%B2%E5%90%8D-%E9%9D%9E%E5%95%86%E4%B8%9A%E6%80%A7%E4%BD%BF%E7%94%A8-%E7%A6%81%E6%AD%A2%E6%BC%94%E7%BB%8E-4-0-%E5%9B%BD%E9%99%85%E8%AE%B8%E5%8F%AF%E5%8D%8F%E8%AE%AE%EF%BC%88%E5%8D%B3-BY-NC-ND-4-0-%E5%9B%BD%E9%99%85%E8%AE%B8%E5%8F%AF%E5%8D%8F%E8%AE%AE%EF%BC%89%EF%BC%8C%E6%89%80%E6%9C%89%E4%BD%BF%E7%94%A8%E5%9D%87%E9%9C%80%E5%BE%97%E5%88%B0%E4%B9%A6%E9%9D%A2%E8%AE%B8%E5%8F%AF-1"><span class="toc-number">3.</span> <span class="toc-text">本文章不适用知识共享署名-非商业性使用-禁止演绎 4.0 国际许可协议（即 BY-NC-ND 4.0 国际许可协议），所有使用均需得到书面许可</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%A6%81%E6%AD%A2%E5%8D%97%E4%BA%AC%E8%88%AA%E7%A9%BA%E8%88%AA%E5%A4%A9%E5%A4%A7%E5%AD%A6%E5%8F%8A%E5%8D%97%E4%BA%AC%E8%88%AA%E7%A9%BA%E8%88%AA%E5%A4%A9%E5%A4%A7%E5%AD%A6%E9%95%BF%E7%A9%BA%E5%AD%A6%E9%99%A2%E5%9C%A8%E4%BB%BB%E4%BD%95%E5%AA%92%E4%BB%8B%E4%BB%A5%E4%BB%BB%E4%BD%95%E5%BD%A2%E5%BC%8F%E5%A4%8D%E5%88%B6%E3%80%81%E6%BC%94%E7%BB%8E%E3%80%81%E5%88%86%E4%BA%AB%E3%80%81%E5%8F%91%E8%A1%8C%E6%9C%AC%E4%BD%9C%E5%93%81-1"><span class="toc-number">4.</span> <span class="toc-text">禁止南京航空航天大学及南京航空航天大学长空学院在任何媒介以任何形式复制、演绎、分享、发行本作品</span></a></li></ol>
                 </div>
             
             <hr />
-            <div itemprop="articleBody"><h3 id="题意"><a href="#题意" class="headerlink" title="题意"></a>题意</h3><p><a target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/P4520">原题链接</a></p>
-<p>一次选举，$N$ 个县给 $M$ 个候选人投票，给出每个县的投票候选序列，问在没有人退出选举的情况下获胜的人，并求最少劝说多少个人退出时，编号为 $K$ 的候选人将获胜。如果多人得票数并列第一，则编号小的人获胜。</p>
-<h3 id="分析"><a href="#分析" class="headerlink" title="分析"></a>分析</h3><p>对于第一个问题，因为没有候选人退出，我们只需要考虑每个县最优先投的那个人，统计每个人的得票数即可。</p>
-<p>对于第二个问题，考虑到 $1 \leq M \leq 15$，我们似乎可以尝试暴力算法，从少到多枚举需要退出的人，统计删去后第 $K$ 个人能否获胜。</p>
-<p>我们使用一个 bool 数组 $st[i]$ 记录每一名候选人是否退出，再遍历统计。</p>
-<p>时间复杂度约为 $O(NM^2)$，这题的数据并不大，这样的时间复杂度是完全可以接受的。</p>
-<p>具体代码实现在代码部分讲解。</p>
-<p>这样，本题就被我们顺利地 AC 啦。</p>
-<p>但事实上，对于第二个问题，刚做题时我们很容易猜想贪心，即每次劝退（即删去）当前得票数最多的人。如果你真这样写了，恭喜你，听取 WA 声一片，20 pts。</p>
-<p>贪心为什么不对呢？我们可以考虑下面这组数据：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">4 4 1</span><br><span class="line">3 1 4 2</span><br><span class="line">2 4 3 1</span><br><span class="line">2 3 1 4</span><br><span class="line">1 2 3 4</span><br></pre></td></tr></table></figure>
-<p>在贪心过程中，我们会依次删去 $2$、$3$ 这两名候选人，然后 $1$ 获胜，那么答案将会是 $2$。</p>
-<p>但显然，这组数据的正确答案是 $1$。我们只需要删去 $3$ 号候选人，根据规则，此时 $1$ 号候选人就将获胜。</p>
-<p>在某些数据下，票数最多的人被删去后，我们的目标 $K$ 并不会被递补至序列队首。因而，贪心并不一定能得到正确答案。</p>
-<p>遗憾的是，本题给出的三组样例，均可以使用贪心得到正确答案，而测试用例中却只有两个点可以用贪心求解。（别问我怎么知道的）</p>
-<h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//AC</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> N=<span class="number">110</span>,M=<span class="number">29</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">int</span> n,m,k;</span><br><span class="line"><span class="keyword">int</span> tot[N];<span class="comment">//统计票数</span></span><br><span class="line"><span class="keyword">int</span> maxm,maxtot,ans;<span class="comment">//统计</span></span><br><span class="line"><span class="keyword">bool</span> st[N];<span class="comment">//是否删去</span></span><br><span class="line"><span class="keyword">int</span> v[N][M];<span class="comment">//保存投票序列</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">dfs</span><span class="params">(<span class="keyword">int</span> t,<span class="keyword">int</span> nt,<span class="keyword">int</span> l)</span></span></span><br><span class="line"><span class="function"><span class="comment">//t表示删去的总人数，nt表示此次删去后已经删去的人数</span></span></span><br><span class="line"><span class="function"><span class="comment">//l表示上次删去的候选人的编号（主要是为了避免重复讨论）</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">if</span>(nt==t+<span class="number">1</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">memset</span>(tot,<span class="number">0</span>,<span class="built_in"><span class="keyword">sizeof</span></span>(tot));</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=n;++i)<span class="comment">//统计删去后得票情况</span></span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">int</span> j=<span class="number">1</span>;</span><br><span class="line">            <span class="keyword">while</span>(st[v[i][j]])</span><br><span class="line">                ++j;</span><br><span class="line">            ++tot[v[i][j]];</span><br><span class="line">        &#125;</span><br><span class="line">    </span><br><span class="line">        maxtot=<span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=m;++i)</span><br><span class="line">            <span class="keyword">if</span>(!st[i]&amp;&amp;maxtot&lt;tot[i])<span class="comment">//为处理并列时小号优先，必须是严格小于</span></span><br><span class="line">            &#123;</span><br><span class="line">                maxtot=tot[i];</span><br><span class="line">                maxm=i;</span><br><span class="line">            &#125;</span><br><span class="line">            </span><br><span class="line">        <span class="keyword">if</span>(maxm==k)</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">            <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=l+<span class="number">1</span>;i&lt;=m-t+nt;++i)<span class="comment">//递归枚举删去的人</span></span><br><span class="line">    <span class="comment">//从 l+1 （上次删去的人的后一个）枚举到 m-t+nt （最后连续 m-t+nt 个），可以避免组合重复，也可以不这么写</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span>(i==k)</span><br><span class="line">            <span class="keyword">continue</span>;</span><br><span class="line">            </span><br><span class="line">        st[i]=<span class="number">1</span>;</span><br><span class="line">        <span class="keyword">if</span>(<span class="built_in">dfs</span>(t,nt+<span class="number">1</span>,i))</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">        st[i]=<span class="number">0</span>;<span class="comment">//恢复现场，初学oier不要忘记</span></span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">&quot;%d%d%d&quot;</span>,&amp;n,&amp;m,&amp;k);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=n;++i)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">1</span>;j&lt;=m;++j)</span><br><span class="line">            <span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>,&amp;v[i][j]);</span><br><span class="line">        ++tot[v[i][<span class="number">1</span>]];<span class="comment">//读入同时统计初始得票</span></span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=m;++i)</span><br><span class="line">        <span class="keyword">if</span>(maxtot&lt;tot[i])</span><br><span class="line">        &#123;</span><br><span class="line">            maxtot=tot[i];</span><br><span class="line">            maxm=i;</span><br><span class="line">        &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;%d\n&quot;</span>,maxm);</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">while</span>(!<span class="built_in">dfs</span>(ans,<span class="number">1</span>,<span class="number">0</span>))<span class="comment">//从小到大枚举删去的人数</span></span><br><span class="line">        ++ans;</span><br><span class="line">    </span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">&quot;%d\n&quot;</span>,ans);</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>一题很好的DFS练习题。</p>
-<p>完结撒花！！！</p>
+            <div itemprop="articleBody"><h2 id="本文章不适用知识共享署名-非商业性使用-禁止演绎-4-0-国际许可协议（即-BY-NC-ND-4-0-国际许可协议），所有使用均需得到书面许可"><a href="#本文章不适用知识共享署名-非商业性使用-禁止演绎-4-0-国际许可协议（即-BY-NC-ND-4-0-国际许可协议），所有使用均需得到书面许可" class="headerlink" title="本文章不适用知识共享署名-非商业性使用-禁止演绎 4.0 国际许可协议（即 BY-NC-ND 4.0 国际许可协议），所有使用均需得到书面许可"></a>本文章不适用知识共享署名-非商业性使用-禁止演绎 4.0 国际许可协议（即 BY-NC-ND 4.0 国际许可协议），所有使用均需得到书面许可</h2><h2 id="禁止南京航空航天大学及南京航空航天大学长空学院在任何媒介以任何形式复制、演绎、分享、发行本作品"><a href="#禁止南京航空航天大学及南京航空航天大学长空学院在任何媒介以任何形式复制、演绎、分享、发行本作品" class="headerlink" title="禁止南京航空航天大学及南京航空航天大学长空学院在任何媒介以任何形式复制、演绎、分享、发行本作品"></a>禁止南京航空航天大学及南京航空航天大学长空学院在任何媒介以任何形式复制、演绎、分享、发行本作品</h2><hr>
+<p>早晨九时，雨后初晴。空气中弥漫着蔷薇的味道，展览路上各种肤色的学生有说有笑。我背着电脑捧着咖啡，漫步在谢菲尔德道上。左行的车辆，红砖砌的房屋，满目新奇与未知中，一阵爽快的夏风吹过，我的交流生活就这样开始了。</p>
+<hr>
+<h3 id="课"><a href="#课" class="headerlink" title="课"></a>课</h3><p>帝国理工学院的校园怪得不能再怪了。我们的教学活动在南肯辛顿主校区开展，一个所谓的“开放式校园”。开放式校园就是没有校园，校区仅有的几幢教学楼与周边街道融为一体，环绕于皇家艺术学院、皇家音乐学院、皇家阿尔伯特音乐厅、维多利亚和阿尔伯特博物馆之中。就是这么一个热闹的英国文化艺术中心，竟隐藏着全球顶尖的理工院校。</p>
+<p>夏校的课程设置也颇有意思。课程内容围绕数据科学设计了诸多lecture，探索了机器学习、探索性数据分析、区块链与比特币、数据隐私等数据科学的各个领域。Dr Helal Ahmed用特色的挑战帮助我们构建小组领导力，Dr Kai Sun利用实时投票互动吸引我们走入区块链的世界，Dr Ovidiu Serban和他的团队带我们走进数据科学所可视化实验室，通过丰富的案例帮助我们领略数据可视化的魅力。</p>
+<p>夏校的重点自然是项目式学习。在长创，由于课程量大的原因，我是没有做过多少实践项目的，夏校的项目设计弥补了这一遗憾。项目分组每组6人，我们被分为10组，共同完成CV和NLP两个项目，Dr. Chengliang Dai和Dr. Sibo Cheng分别为我们设计了颇具挑战的项目课题并提供了详细的指导。我重点负责了我们组的CV项目，克服计算资源、网络结构等诸多障碍，设计了一个针对三维脑影像的肿瘤分割模型，我们小组最终获得了“最佳答辩小组”。如Dr. Kai Sun在结课仪式上说，最后一周的夜晚，宿舍楼的灯始终是亮的。</p>
+<hr>
+<h3 id="人"><a href="#人" class="headerlink" title="人"></a>人</h3><p>交流的过程，是从一群人走进另一群人的过程。</p>
+<p>住在伦敦，也行在伦敦，总能遇到伦敦的人。楼下餐厅的土耳其奶奶翻转着面饼，白金汉宫里的工作小哥热情地协调解决困难，肯辛顿宫的安检姐姐细致地帮你收拾行李，路过的阿姨主动询问是否迷路，宿舍门口保洁大叔热心开门，展览路上的夫妇俩欢乐地吹着泡泡，交通博物馆健谈的志愿者老爷爷展示着伦敦交通票的发展，伦敦的人是伦敦的核心，是大伦敦地区的活力源泉。多元、包容、开放的伦敦人，成就了多元、包容、开放的大伦敦。</p>
+
+<p>除了伦敦人，还有一同参加暑校项目的同学。他们来自各个名校各种专业，具有不同背景。我CV项目的队友是来自东南大学的Fuyao，来自通信工程专业。她的英语水平如同母语，承担了大量的论文报告工作。Fuyao喜欢艺术，喜欢科学，也喜欢厨艺，贡献了不少晚餐美食。还有来自埃及的Mohamed，已经工作但仍然参加暑校提升自己，见面时总是少不了笑容。</p>
+<p>总有些令人惊喜的相遇。</p>
+<hr>
+<h3 id="城"><a href="#城" class="headerlink" title="城"></a>城</h3><p>社会活动也是夏校课程必不可少的组成部分。在IC学生大使的带领下，我们乘船沿泰晤士河顺流而下，也徒步穿越伦敦科技城（Tech City）。提起伦敦科技城，我原本并不认识。直到下车看路标才发现，这里竟是Hackney。历史上这里一直是贫民、移民的聚集区，也曾是“开膛手杰克”的出没地，以脏、乱、差的状态成为东伦敦的代表。而现在，自由时尚的涂鸦设计遍布此区，摩登新锐的建筑破土生长，这里已经变身为新旧结合、引领潮流的文化创意区和科创特区。东伦敦城市的复兴，不失为科创赋能城市升级的典范。</p>
+
+<p>课余时间，我喜欢独自在伦敦城里散步。伦敦的夏夜黑得晚，好几个傍晚，我从伦敦桥走到利物浦街，从格林公园穿过皮卡迪利环走到唐人街，从肯辛顿花园走到牛津环，在CityWalk的发源地轧了一次又一次马路。漫步在不同的街区，仿佛穿越时空般，探索都铎式建筑的实用至上，触摸维多利亚式建筑的哥特式复兴，感受现代主义风格的简洁开阔，伦敦厚重的城建历史随着漫步徐徐展开。</p>
+<div class="table-container">
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table>
 </div>
+<hr>
+<p>所以，为什么去交流？</p>
+<p>是出逃俗常，是奔赴未知，是跨越山海完成一场文化的际遇，是在无穷的远方与无数的人进行一场思想的交汇。是趁青春年少，趁时光正好。</p>
+<p>与IC相遇的故事，还远未结束。</p>
+<hr>
+<h2 id="本文章不适用知识共享署名-非商业性使用-禁止演绎-4-0-国际许可协议（即-BY-NC-ND-4-0-国际许可协议），所有使用均需得到书面许可-1"><a href="#本文章不适用知识共享署名-非商业性使用-禁止演绎-4-0-国际许可协议（即-BY-NC-ND-4-0-国际许可协议），所有使用均需得到书面许可-1" class="headerlink" title="本文章不适用知识共享署名-非商业性使用-禁止演绎 4.0 国际许可协议（即 BY-NC-ND 4.0 国际许可协议），所有使用均需得到书面许可"></a>本文章不适用知识共享署名-非商业性使用-禁止演绎 4.0 国际许可协议（即 BY-NC-ND 4.0 国际许可协议），所有使用均需得到书面许可</h2><h2 id="禁止南京航空航天大学及南京航空航天大学长空学院在任何媒介以任何形式复制、演绎、分享、发行本作品-1"><a href="#禁止南京航空航天大学及南京航空航天大学长空学院在任何媒介以任何形式复制、演绎、分享、发行本作品-1" class="headerlink" title="禁止南京航空航天大学及南京航空航天大学长空学院在任何媒介以任何形式复制、演绎、分享、发行本作品"></a>禁止南京航空航天大学及南京航空航天大学长空学院在任何媒介以任何形式复制、演绎、分享、发行本作品</h2></div>
         </div>
         
             <div class="kratos-copyright text-center clearfix">
@@ -359,7 +377,7 @@
     <script type="text/javascript">
         $(()=>{
             new QRCode("wechat-qr", {
-                text: "https://tthac09.github.io/2020/08/28/key-luogu-P4520/",
+                text: "https://tthac09.github.io/2023/09/05/london-explore%20copy/",
                 width: 150,
                 height: 150,
                 correctLevel : QRCode.CorrectLevel.H
@@ -371,11 +389,9 @@
             const qzoneBase     = "https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?";
             const facebookBase  = "https://www.facebook.com/sharer/sharer.php?";
             const twitterBase   = "https://twitter.com/intent/tweet?";
-            const hostUrl       = "https://tthac09.github.io/2020/08/28/key-luogu-P4520/";
-            const title         = "「【题解】 洛谷P4520 [COCI2017-2018 Contest4] Izbori」";
-            const excerpt       = `题意原题链接
-一次选举，$N$ 个县给 $M$ 个候选人投票，给出每个县的投票候选序列，问在没有人退出选举的情况下获胜的人，并求最少劝说多少个人退出时，编号为 $K$ 的候选人将获胜。如果多人得票数并列第一，则编号小的人获胜。
-分析对...`;
+            const hostUrl       = "https://tthac09.github.io/2023/09/05/london-explore%20copy/";
+            const title         = "「【前序】在典雅与学术的交织中探寻」";
+            const excerpt       = `本文章不适用知识共享署名-非商业性使用-禁止演绎 4.0 国际许可协议（即 BY-NC-ND 4.0 国际许可协议），所有使用均需得到书面许可禁止南京航空航天大学及南京航空航天大学长空学院在任何媒介以任何形式复制、演绎、分享、发行本作...`;
             let _URL;
             switch (dest) {
                 case "qq"       : _URL = qqBase+"url="+hostUrl+"&title="+title+"&desc=&summary="+excerpt+"&site=cxpy";     break;
@@ -394,10 +410,10 @@
             <div class="footer-tag clearfix">
                 <div class="pull-left">
                 <i class="fa fa-tags"></i>
-                    <a class="tag-none-link" href="/tags/%E6%B4%9B%E8%B0%B7/" rel="tag">洛谷</a>
+                    <a class="tag-none-link" href="/tags/London/" rel="tag">London</a>
                 </div>
                 <div class="pull-date">
-                    <time datetime="2022-04-02T12:25:54.580Z" itemprop="dateModified">最后编辑：2022-04-02</time>
+                    <time datetime="2023-09-14T08:34:13.825Z" itemprop="dateModified">最后编辑：2023-09-14</time>
                 </div>
             </div>
         </footer>
@@ -406,12 +422,12 @@
         <nav class="navigation post-navigation clearfix" role="navigation">
             
             <div class="nav-previous clearfix">
-                <a title=" APIO2020打铁记" href="/2020/08/18/apio2020-notes/">&lt; 上一篇</a>
+                <a title=" ICPC2023西安邀请赛游记" href="/2023/05/24/icpc2023-xian-invitational-notes/">&lt; 上一篇</a>
             </div>
             
             
             <div class="nav-next clearfix">
-                <a title=" CSP-S 2020 游记" href="/2020/11/14/csp2020-notes/">下一篇 &gt;</a>
+                <a title=" 【前序】在典雅与学术的交织中探寻" href="/2023/09/05/london-explore/">下一篇 &gt;</a>
             </div>
             
         </nav>
@@ -424,7 +440,7 @@
         const init = () => {
             Waline.init(Object.assign({
                 el: '#w-comments',
-                path: '/2020/08/28/key-luogu-P4520/',
+                path: '/2023/09/05/london-explore%20copy/',
                 dark: 'html[data-theme="dark"]',
                 locale : {
                     mail: '邮箱（选填）',
@@ -507,7 +523,7 @@
         <span class="toc-progress-bar" role="progressbar" aria-label="阅读进度："></span>
     </h4>
     <div class="textwidget">
-        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%A2%98%E6%84%8F"><span class="toc-text">题意</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%86%E6%9E%90"><span class="toc-text">分析</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BB%A3%E7%A0%81"><span class="toc-text">代码</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9C%AC%E6%96%87%E7%AB%A0%E4%B8%8D%E9%80%82%E7%94%A8%E7%9F%A5%E8%AF%86%E5%85%B1%E4%BA%AB%E7%BD%B2%E5%90%8D-%E9%9D%9E%E5%95%86%E4%B8%9A%E6%80%A7%E4%BD%BF%E7%94%A8-%E7%A6%81%E6%AD%A2%E6%BC%94%E7%BB%8E-4-0-%E5%9B%BD%E9%99%85%E8%AE%B8%E5%8F%AF%E5%8D%8F%E8%AE%AE%EF%BC%88%E5%8D%B3-BY-NC-ND-4-0-%E5%9B%BD%E9%99%85%E8%AE%B8%E5%8F%AF%E5%8D%8F%E8%AE%AE%EF%BC%89%EF%BC%8C%E6%89%80%E6%9C%89%E4%BD%BF%E7%94%A8%E5%9D%87%E9%9C%80%E5%BE%97%E5%88%B0%E4%B9%A6%E9%9D%A2%E8%AE%B8%E5%8F%AF"><span class="toc-text">本文章不适用知识共享署名-非商业性使用-禁止演绎 4.0 国际许可协议（即 BY-NC-ND 4.0 国际许可协议），所有使用均需得到书面许可</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%A6%81%E6%AD%A2%E5%8D%97%E4%BA%AC%E8%88%AA%E7%A9%BA%E8%88%AA%E5%A4%A9%E5%A4%A7%E5%AD%A6%E5%8F%8A%E5%8D%97%E4%BA%AC%E8%88%AA%E7%A9%BA%E8%88%AA%E5%A4%A9%E5%A4%A7%E5%AD%A6%E9%95%BF%E7%A9%BA%E5%AD%A6%E9%99%A2%E5%9C%A8%E4%BB%BB%E4%BD%95%E5%AA%92%E4%BB%8B%E4%BB%A5%E4%BB%BB%E4%BD%95%E5%BD%A2%E5%BC%8F%E5%A4%8D%E5%88%B6%E3%80%81%E6%BC%94%E7%BB%8E%E3%80%81%E5%88%86%E4%BA%AB%E3%80%81%E5%8F%91%E8%A1%8C%E6%9C%AC%E4%BD%9C%E5%93%81"><span class="toc-text">禁止南京航空航天大学及南京航空航天大学长空学院在任何媒介以任何形式复制、演绎、分享、发行本作品</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AF%BE"><span class="toc-text">课</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%BA"><span class="toc-text">人</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9F%8E"><span class="toc-text">城</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9C%AC%E6%96%87%E7%AB%A0%E4%B8%8D%E9%80%82%E7%94%A8%E7%9F%A5%E8%AF%86%E5%85%B1%E4%BA%AB%E7%BD%B2%E5%90%8D-%E9%9D%9E%E5%95%86%E4%B8%9A%E6%80%A7%E4%BD%BF%E7%94%A8-%E7%A6%81%E6%AD%A2%E6%BC%94%E7%BB%8E-4-0-%E5%9B%BD%E9%99%85%E8%AE%B8%E5%8F%AF%E5%8D%8F%E8%AE%AE%EF%BC%88%E5%8D%B3-BY-NC-ND-4-0-%E5%9B%BD%E9%99%85%E8%AE%B8%E5%8F%AF%E5%8D%8F%E8%AE%AE%EF%BC%89%EF%BC%8C%E6%89%80%E6%9C%89%E4%BD%BF%E7%94%A8%E5%9D%87%E9%9C%80%E5%BE%97%E5%88%B0%E4%B9%A6%E9%9D%A2%E8%AE%B8%E5%8F%AF-1"><span class="toc-text">本文章不适用知识共享署名-非商业性使用-禁止演绎 4.0 国际许可协议（即 BY-NC-ND 4.0 国际许可协议），所有使用均需得到书面许可</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%A6%81%E6%AD%A2%E5%8D%97%E4%BA%AC%E8%88%AA%E7%A9%BA%E8%88%AA%E5%A4%A9%E5%A4%A7%E5%AD%A6%E5%8F%8A%E5%8D%97%E4%BA%AC%E8%88%AA%E7%A9%BA%E8%88%AA%E5%A4%A9%E5%A4%A7%E5%AD%A6%E9%95%BF%E7%A9%BA%E5%AD%A6%E9%99%A2%E5%9C%A8%E4%BB%BB%E4%BD%95%E5%AA%92%E4%BB%8B%E4%BB%A5%E4%BB%BB%E4%BD%95%E5%BD%A2%E5%BC%8F%E5%A4%8D%E5%88%B6%E3%80%81%E6%BC%94%E7%BB%8E%E3%80%81%E5%88%86%E4%BA%AB%E3%80%81%E5%8F%91%E8%A1%8C%E6%9C%AC%E4%BD%9C%E5%93%81-1"><span class="toc-text">禁止南京航空航天大学及南京航空航天大学长空学院在任何媒介以任何形式复制、演绎、分享、发行本作品</span></a></li></ol>
     </div>
 </aside>
                 
