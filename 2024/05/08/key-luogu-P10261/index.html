@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <link rel="icon" href="/images/logo.webp">
   
-  <title>【泰晤士明信片 · 第肆章】IC魔力转圈圈 | tthac09&#39;s blog</title>
+  <title>【题解】 洛谷P10261 [COCI2023/2024 \#4] Trokut | tthac09&#39;s blog</title>
   
   <meta name="author" content="tthac09" />
   <meta http-equiv="Cache-Control" content="no-transform" />
@@ -15,22 +15,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
   <meta name="format-detection" content="telphone=no, email=no" />
   
-    <meta name="keywords" content="London" />
+    <meta name="keywords" content="COCI, 洛谷" />
   
-  <meta name="description" content="一些拖更的解释（bushi）新年好呀！ 如果没猜错的话，到这章（第4章）发出来为止，第三章应该还没写完（手动狗头）。真不是我故意拖更，本来有打算引用很多 LTM 档案里的老照片和文物资料的，但是 LTM 工作流程实在是太繁琐，按我的需求搞不好要申请几十次，就一直拖着了。无所谓了，反正伦敦地铁 120 周年早就结束了，暑假 TFL 也要给 Overground 命名很多不同的线路名了，万恶的皮卡迪利">
+  <meta name="description" content="题目链接 传送门 洛谷题解 传送门一些碎碎念被迫中断更新写篇题解。 写完这题突然开始喜欢上 COCI 了，他们家的题目挺有意思的。 题意给定正 $N$ 边形顶点，每次操作取两个点连接，并要求连线不与已有连线相交（顶点可以相同），连出三角形的人获胜（连线没有标签颜色之类的）。新朋友 Ivan 和 Lucija 轮流最优操作，不是Alice和Bob，Lucija 先手，问谁赢。 分析注意到一个重要性质">
 <meta property="og:type" content="article">
-<meta property="og:title" content="【泰晤士明信片 · 第肆章】IC魔力转圈圈">
-<meta property="og:url" content="https://tthac09.github.io/2024/03/28/london-travels-4/index.html">
+<meta property="og:title" content="【题解】 洛谷P10261 [COCI2023&#x2F;2024 \#4] Trokut">
+<meta property="og:url" content="https://tthac09.github.io/2024/05/08/key-luogu-P10261/index.html">
 <meta property="og:site_name" content="tthac09&#39;s blog">
-<meta property="og:description" content="一些拖更的解释（bushi）新年好呀！ 如果没猜错的话，到这章（第4章）发出来为止，第三章应该还没写完（手动狗头）。真不是我故意拖更，本来有打算引用很多 LTM 档案里的老照片和文物资料的，但是 LTM 工作流程实在是太繁琐，按我的需求搞不好要申请几十次，就一直拖着了。无所谓了，反正伦敦地铁 120 周年早就结束了，暑假 TFL 也要给 Overground 命名很多不同的线路名了，万恶的皮卡迪利">
+<meta property="og:description" content="题目链接 传送门 洛谷题解 传送门一些碎碎念被迫中断更新写篇题解。 写完这题突然开始喜欢上 COCI 了，他们家的题目挺有意思的。 题意给定正 $N$ 边形顶点，每次操作取两个点连接，并要求连线不与已有连线相交（顶点可以相同），连出三角形的人获胜（连线没有标签颜色之类的）。新朋友 Ivan 和 Lucija 轮流最优操作，不是Alice和Bob，Lucija 先手，问谁赢。 分析注意到一个重要性质">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://tthac09.github.io/2024/03/28/london-travels-4/London5.webp">
-<meta property="article:published_time" content="2024-03-27T16:00:00.000Z">
-<meta property="article:modified_time" content="2024-05-08T09:08:03.852Z">
+<meta property="og:image" content="https://tthac09.github.io/images/logo.webp">
+<meta property="article:published_time" content="2024-05-07T16:00:00.000Z">
+<meta property="article:modified_time" content="2024-05-08T09:07:16.175Z">
 <meta property="article:author" content="tthac09">
-<meta property="article:tag" content="London">
+<meta property="article:tag" content="洛谷">
+<meta property="article:tag" content="COCI">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://tthac09.github.io/2024/03/28/london-travels-4/London5.webp">
+<meta name="twitter:image" content="https://tthac09.github.io/images/logo.webp">
   
   <!-- 站点验证相关 -->
   
@@ -236,15 +237,15 @@
 
             <article itemscope itemtype="https://schema.org/Article">
     
-    <link itemprop="mainEntityOfPage" href="https://tthac09.github.io/2024/03/28/london-travels-4/">
+    <link itemprop="mainEntityOfPage" href="https://tthac09.github.io/2024/05/08/key-luogu-P10261/">
     <div class="kratos-hentry kratos-post-inner clearfix">
         <header class="kratos-entry-header">
             
-                <h1 class="kratos-entry-title text-center" itemprop="name headline">【泰晤士明信片 · 第肆章】IC魔力转圈圈</h1>
+                <h1 class="kratos-entry-title text-center" itemprop="name headline">【题解】 洛谷P10261 [COCI2023/2024 \#4] Trokut</h1>
             
             
             <ul class="kratos-post-meta text-center">
-                <li><time datetime="2024-03-27T16:00:00.000Z" itemprop="datePublished"><i class="fa fa-calendar"></i> 2024-03-28</time></li>
+                <li><time datetime="2024-05-07T16:00:00.000Z" itemprop="datePublished"><i class="fa fa-calendar"></i> 2024-05-08</time></li>
                 <li itemprop="author" itemscope itemtype="https://schema.org/Person">
                     <i class="fa fa-user"></i> 作者 <span itemprop="name">tthac09</span>
                 </li>
@@ -253,7 +254,7 @@
                         <i class="fa fa-edit"></i> 
                         
                         
-                            ~2.33K
+                            ~2.57K
                         
                         字
                     </li>
@@ -262,13 +263,13 @@
                     
                         <li>
                             <i class="fa fa-eye"></i>
-                            <span data-path="/2024/03/28/london-travels-4/" class="waline-pageview-count"> </span> 次阅读
+                            <span data-path="/2024/05/08/key-luogu-P10261/" class="waline-pageview-count"> </span> 次阅读
                         </li>
                     
                     
                         <li>
                             <i class="fa fa-commenting-o"></i>
-                            <span data-path="/2024/03/28/london-travels-4/" class="waline-comment-count"> </span> 条评论
+                            <span data-path="/2024/05/08/key-luogu-P10261/" class="waline-comment-count"> </span> 条评论
                         </li>
                     
                 
@@ -278,58 +279,36 @@
             
             <div id="expire-alert" class="alert alert-warning hidden" role="alert">
                 <div class="icon"><i class="fa fa-warning"></i></div>
-                <div class="text"><p>本文最后编辑于 <time datetime="1715159283852"></time> 前，其中的内容可能需要更新。</p></div>
+                <div class="text"><p>本文最后编辑于 <time datetime="1715159236175"></time> 前，其中的内容可能需要更新。</p></div>
             </div>
             
             
             
                 <div class="kratos-post-inner-toc toc-div-class" >
-                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%80%E4%BA%9B%E6%8B%96%E6%9B%B4%E7%9A%84%E8%A7%A3%E9%87%8A%EF%BC%88bushi%EF%BC%89"><span class="toc-number">1.</span> <span class="toc-text">一些拖更的解释（bushi）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%8E%BB%E7%92%83%E7%9B%92%E5%AD%90"><span class="toc-number">2.</span> <span class="toc-text">玻璃盒子</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#20%E5%B2%81%E7%9A%84%E4%B8%BB%E5%85%A5%E5%8F%A3"><span class="toc-number">3.</span> <span class="toc-text">20岁的主入口</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A5%B3%E7%8E%8B%E5%A1%94%EF%BC%9F%E8%84%9A%E6%89%8B%E6%9E%B6%EF%BC%81"><span class="toc-number">4.</span> <span class="toc-text">女王塔？脚手架！</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%A3%9F%E5%9C%A8IC"><span class="toc-number">5.</span> <span class="toc-text">食在IC</span></a></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3-%E4%BC%A0%E9%80%81%E9%97%A8"><span class="toc-number">1.</span> <span class="toc-text">洛谷题解 传送门</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%80%E4%BA%9B%E7%A2%8E%E7%A2%8E%E5%BF%B5"><span class="toc-number">1.1.</span> <span class="toc-text">一些碎碎念</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%A2%98%E6%84%8F"><span class="toc-number">1.2.</span> <span class="toc-text">题意</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%86%E6%9E%90"><span class="toc-number">1.3.</span> <span class="toc-text">分析</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BB%A3%E7%A0%81"><span class="toc-number">1.4.</span> <span class="toc-text">代码</span></a></li></ol></li></ol>
                 </div>
             
             <hr />
-            <div itemprop="articleBody"><h3 id="一些拖更的解释（bushi）"><a href="#一些拖更的解释（bushi）" class="headerlink" title="一些拖更的解释（bushi）"></a>一些拖更的解释（bushi）</h3><p>新年好呀！</p>
-<p>如果没猜错的话，到这章（第4章）发出来为止，第三章应该还没写完<del>（手动狗头）</del>。真不是我故意拖更，本来有打算引用很多 LTM 档案里的老照片和文物资料的，但是 LTM 工作流程实在是太繁琐，按我的需求搞不好要申请几十次，就一直拖着了。无所谓了，反正伦敦地铁 120 周年早就结束了，暑假 TFL 也要给 Overground 命名很多不同的线路名了，万恶的皮卡迪利线也要迎来新车了，干脆再拖拖吧。（写的时候看到的，这周末Overground又strike了。。。</p>
-<p>所以，让我们暂时忘记伦敦地铁史话，继续旅程吧。</p>
-<p>所以这章我们看些什么呢？</p>
-<p>还记得第二章（讲展览路那章）挖过一个坑吗？Imperial的内部建筑可还没介绍呢。再说，暑校要有暑校的亚子，第一周的学习也是该要讲讲的。那就先放出一张 Imperial College South Kensington Campus 的地图。（这张图是在 joining information 里找到的，著作权归属原作者，侵删）</p>
-<img src="/2024/03/28/london-travels-4/ICSKCMap.jpg" class="">
-<p>（Imperial College London）</p>
-<h3 id="玻璃盒子"><a href="#玻璃盒子" class="headerlink" title="玻璃盒子"></a>玻璃盒子</h3><p>众所周知，Imperial 南肯校区的大部分楼都有一个“爱称” —— 玻璃盒子。楼如其名，它们长成下面这个样子。</p>
-<img src="/2024/03/28/london-travels-4/Dalby.jpg" class="">
-<p>这张照片是在 Dalby Court 拍的。Dalby Court 是 Imperial 南肯校区的中心，以 William Ernest Dalby 教授的名字命名，纪念他在改进火车引擎方面的卓越贡献。（在IC网站上介绍这一段内容的部分特地给出了各个建筑的 3 words address，死去的高中阅读理解记忆复活了，然后再一查好家伙这玩意总部在伦敦）</p>
-<p>上图左边那个楼是 Bessemer Building，生物相关的实验室都在这里。这栋楼建于 20 世纪 40 年代，于 2006 年进行过现代化改造，是的你们没看错，他们能把这么老的楼改造成这个鬼样子，大面积的玻璃幕墙加上这奇怪的饱和绿色 <span class="blur">绿得发慌</span>，只能说很现代主义。</p>
-<p>至于右边那个建筑，就是 City and Guilds Building，可以理解成是 IC 的主楼，现在由机械和航空系使用，这楼的另一面就是那个难看到要死的 Main Entrance。航空系的楼里有很多奇奇怪怪的古早机械设计，看着挺有意思的。</p>
-<img src="/2024/03/28/london-travels-4/Engine.jpg" class="">
-<p>Bessemer Building再向左边去那个建筑（没拍到）叫 EEE Building，就是EEE相关学科的楼，一个小问题是我没查到它的历史，不过应该挺新的，但是长得还算正常。</p>
-<p>IC 大部分楼都跟上面的玻璃盒子差不多，就不再展开讲了。</p>
-<h3 id="20岁的主入口"><a href="#20岁的主入口" class="headerlink" title="20岁的主入口"></a>20岁的主入口</h3><p>是的！没错！<del>百年老校</del>帝国理工的主入口只有 20 岁，是不是比你还小哈哈哈。</p>
-<p>IC 的主入口位于展览路，由 Foster + Partners 的设计师设计，由伊丽莎白二世女王于 2004 年 6 月宣布开幕。外景照片第二章放过了，这里就不重复发了，看看内景吧。</p>
-<img src="/2024/03/28/london-travels-4/ME1.jpg" class="">
-<img src="/2024/03/28/london-travels-4/ME2.jpg" class="">
-<p>对面那个就是第二章描述的乔治亚式建筑，IC 这奇怪的玻璃墙为建筑内带来了绝美的街景享受，但外立面实在是破坏整体环境，只能说有利有弊吧。</p>
-<h3 id="女王塔？脚手架！"><a href="#女王塔？脚手架！" class="headerlink" title="女王塔？脚手架！"></a>女王塔？脚手架！</h3><p>听过 IC 的人大抵都听过这个 Queen’s Tower 吧，作为 Imperial 的标志，它长这个样子。</p>
-<img src="/2024/03/28/london-travels-4/QT.jpg" class="">
-<p>。<span class="blur">地铁老人手机.jpg</span> 没错上个暑假这尊贵的建筑正在被脚手架包裹着。</p>
-<p>Queen’s Tower 始建于 1887 年，纪念维多利亚女王的金禧年（登基 50 周年），并于1893 年正式开业。现在，女王塔是 Imperial Institution 唯一存世的遗存。Imperial Institution 眼熟吧，它是 IC 的前身， 也就是第二章那个缺了大德挡地下通道路的楼。</p>
-<p>因为没看到真身，我也不好多写，只知道是新文艺复兴风格的建筑，其他的就请各位自行 wiki 吧。</p>
-<h3 id="食在IC"><a href="#食在IC" class="headerlink" title="食在IC"></a>食在IC</h3><p><del>公众号味好浓的标题哈哈哈</del></p>
-<p>IC 在 Sherfield Building 上有两个 canteen，一个 senior 一个 junior，会供应热餐，剩下的都是 cafe，供应一些简餐。过了太久顺序我已经记不清了，就随便挑些吧。</p>
-<p>先来看看简餐吧。</p>
-<img src="/2024/03/28/london-travels-4/Lunch1.jpg" class="">
-<p>柠檬酱烤鸡腿配薯条，主食是炒饭，是在戴森学院那边的 cafe，作为主菜的烤鸡腿品质不错，烤制的火候适中，酸甜的柠檬酱给我一种南京烤鸭的即视感。薯条嘛，跟英国其他店的薯条一样，一如既往的难吃。与其叫薯条不如叫土豆块，切的很粗，虽然表皮已经脆了，但内里是那种水煮的口感。米饭口味不错，长稻米也实在是适合炒饭。</p>
-<img src="/2024/03/28/london-travels-4/Lunch2.jpg" class="">
-<p>这是图书馆的 cafe，烤鸡腿的火候比上面那个过了一些，皮的口感不够脆。薯条嘛还是那个难吃的薯条，蔬菜就是正常蔬菜沙拉的口感，无功也无过。</p>
-<img src="/2024/03/28/london-travels-4/Lunch3.jpg" class="">
-<p>已经忘了是哪里的饭了，水煮的豆子和水煮的鸡肉格格不入，味型完全在靠那一点点酱汁在维系，很减脂哈哈哈。</p>
-<p>下面的都是 senior 的热餐了。</p>
-<img src="/2024/03/28/london-travels-4/Lunch4.jpg" class="">
-<p>鳕鱼汉堡薯条配沙拉。薯条和沙拉都不用多说了，鳕鱼非常棒，鱼肉的鲜嫩和入口即化为这个汉堡增色不少。</p>
-<img src="/2024/03/28/london-travels-4/Lunch5.jpg" class="">
-<p>这张为什么放在最后呢，因为我对这餐的评价最高。</p>
-<p>煎牛扒配蔬菜沙拉，主食是炒饭，还有一个玉米棒。牛排怎么说呢，相当惊艳，入口浓郁的汁水和肉香都是绝佳的味觉享受，与蔬菜沙拉的解腻完美结合。牛肉介于七分熟与全熟之间，看不出太多血色，但也足够鲜嫩，很合口味。</p>
-<p>旁边的甜品是方糕浇上炼乳，甜品的口味嘛，听我说的不准，<del>只要是甜的都好吃</del>，当然，这块糕本身蒸的也非常蓬松，是好吃的甜品。</p>
-<p>这章到这里就结束了，第三章还是暂时先空着，下一章继续旅游啦。不过下面我可能会双线推进，更另一部分旅游故事了。</p>
+            <div itemprop="articleBody"><p>题目链接 <a target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/P10261">传送门</a></p>
+<h2 id="洛谷题解-传送门"><a href="#洛谷题解-传送门" class="headerlink" title="洛谷题解 传送门"></a>洛谷题解 <a target="_blank" rel="noopener" href="https://www.luogu.com.cn/problem/solution/P10261">传送门</a></h2><h3 id="一些碎碎念"><a href="#一些碎碎念" class="headerlink" title="一些碎碎念"></a>一些碎碎念</h3><p>被迫中断更新写篇题解。</p>
+<p>写完这题突然开始喜欢上 <em>COCI</em> 了，他们家的题目挺有意思的。</p>
+<h3 id="题意"><a href="#题意" class="headerlink" title="题意"></a>题意</h3><p>给定正 $N$ 边形顶点，每次操作取两个点连接，并要求连线不与已有连线相交（顶点可以相同），连出三角形的人获胜（连线没有标签颜色之类的）。新朋友 <em>Ivan</em> 和 <em>Lucija</em> 轮流最优操作，<del>不是Alice和Bob</del>，<em>Lucija</em> 先手，问谁赢。</p>
+<h3 id="分析"><a href="#分析" class="headerlink" title="分析"></a>分析</h3><p>注意到一个重要性质：除了获胜操作时，每次操作不能连接任何一个已经有线段连接的点；</p>
+<p>这一性质的证明是显然的：如若不然，会在图中构建出一个角，并且它的两个端点间不可能有任何线段阻隔（必然与其中一条边相交），对手在下一次操作时就可以选择连接他们构成三角形，如下图所示。</p>
+<img src="/2024/05/08/key-luogu-P10261/1.png" class="">
+<p>因此，对于每一条线段，新线段既不能跨越也不能连接。换言之，它都会将原问题的点划分为两个互相独立的子集，新增加的线段都只能在其中一个子集中。</p>
+<p>本题转化为，给定 $N$ 个点，每次操作取非线段端点的两个顶点连接，且连线不与已有线段相交，不能操作的人必败。使用 <em>SG</em> 定理解决 <em>SG</em> 游戏问题的思路已经再明显不过了。（前置芝士：<em>Nim</em> 博弈游戏与 <em>SG</em> 定理）</p>
+<p>考虑对有 $n$ 个顶点的母游戏进行一次操作，连接两个点会将其划分为两个分别有 $a$ 个和 $b$ 个顶点的子游戏，其中 $a+b=n-2$，故 <em>SG</em> 函数定义为</p>
+<script type="math/tex; mode=display">SG(0)=SG(1)=0</script><script type="math/tex; mode=display">SG(n)=MEX\{SG(a)\operatorname{xor}SG(b)| a+b=n-2\}, n \ge 2</script><p>原问题 $N$ 个顶点中先手 <em>Lucija</em> 必胜的充要条件为 $SG(N) &gt; 0$。</p>
+<p>这种解法的时间复杂度为 $O(N^2)$，可以轻松通过前两个 <em>SubTask</em>，那么如何解决本题 $N \le 10^9$ 的数据范围呢？一种可能的想法是打标，下表是从 $SG(2)$ 开始的 <em>SG</em> 函数值。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">1 1 2 0 3 1 1 0 3 3 2 2 4 0 5 2 2 3 3 0 1 1 3 0 2 1 1 0 4 5 2 7 4 0</span><br><span class="line">1 1 2 0 3 1 1 0 3 3 2 2 4 4 5 5 2 3 3 0 1 1 3 0 2 1 1 0 4 5 3 7 4 8</span><br><span class="line">1 1 2 0 3 1 1 0 3 3 2 2 4 4 5 5 9 3 3 0 1 1 3 0 2 1 1 0 4 5 3 7 4 8</span><br><span class="line">1 1 2 0 3 1 1 0 3 3 2 2 4 4 5 5 9 3 3 0 1 1 3 0 2 1 1 0 4 5 3 7 4 8</span><br><span class="line">1 1 2 0 3 1 1 0 3 3 2 2 4 4 5 5 9 3 3 0 1 1 3 0 2 1 1 0 4 5 3 7 4 8</span><br><span class="line">1 1 2 0 3 1 1 0 3 3 2 2 4 4 5 5 9 3 3 0 1 1 3 0 2 1 1 0 4 5 3 7 4 8</span><br><span class="line">1 1 2 0 3 1 1 0 3 3 2 2 4 4 5 5 9 3 3 0 1 1 3 0 2 1 1 0 4 5 3 7 4 8</span><br><span class="line">1 1 2 0 3 1 1 0 3 3 2 2 4 4 5 5 9 3 3 0 1 1 3 0 2 1 1 0 4 5 3 7 4 8</span><br><span class="line">1 1 2 0 3 1 1 0 3 3 2 2 4 4 5 5 9 3 3 0 1 1 3 0 2 1 1 0 4 5 3 7 4 8</span><br><span class="line">1 1 2 0 3 1 1 0 3 3 2 2 4 4 5 5 9 3 3 0 1 1 3 0 2 1 1 0 4 5 3 7 4 8</span><br></pre></td></tr></table></figure>
+<p>不难观察发现，从 $SG(69)$ 开始（第三行），<em>SG</em> 函数值以 $34$ 为循环节进行循环。换言之，我们只需要计算到 $SG(102)$ 就足以解决本题。</p>
+<p>这样，本题就被我们顺利地 AC 啦。</p>
+<h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//AC</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> MAXN = <span class="number">102</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">int</span> t;</span><br><span class="line"><span class="keyword">int</span> sg[MAXN + <span class="number">10</span>];</span><br><span class="line"><span class="keyword">bool</span> vis[MAXN + <span class="number">10</span>];</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="comment">// freopen(&quot;test.txt&quot;, &quot;w&quot;, stdout);</span></span><br><span class="line"></span><br><span class="line">    sg[<span class="number">0</span>] = sg[<span class="number">1</span>] = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">2</span>; i &lt;= MAXN; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">memset</span>(vis, <span class="number">0</span>, <span class="built_in"><span class="keyword">sizeof</span></span>(vis));</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> j = <span class="number">0</span>; <span class="number">2</span> * j &lt;= i - <span class="number">2</span>; j++)</span><br><span class="line">            vis[sg[j] ^ sg[i - <span class="number">2</span> - j]] = <span class="literal">true</span>;</span><br><span class="line">        <span class="keyword">int</span> x = <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">while</span> (vis[x])</span><br><span class="line">            x++;</span><br><span class="line">        sg[i] = x;</span><br><span class="line">        <span class="comment">// cout &lt;&lt; x &lt;&lt; &quot; &quot;;</span></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">int</span> T, n;</span><br><span class="line">    cin &gt;&gt; T;</span><br><span class="line">    <span class="keyword">while</span> (T--)</span><br><span class="line">    &#123;</span><br><span class="line">        cin &gt;&gt; n;</span><br><span class="line">        <span class="keyword">if</span> (n &gt;= <span class="number">103</span>)</span><br><span class="line">            n = (n - <span class="number">69</span>) % <span class="number">34</span> + <span class="number">69</span>;</span><br><span class="line">        <span class="keyword">if</span> (sg[n])</span><br><span class="line">            cout &lt;&lt; <span class="string">&quot;Lucija&quot;</span> &lt;&lt; endl;</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">            cout &lt;&lt; <span class="string">&quot;Ivan&quot;</span> &lt;&lt; endl;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>非常典型的 <em>SG</em> 定理练习题，完结撒花！！！</p>
+<hr>
+<p><img src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" alt="知识共享许可协议"></p>
+<p>本作品采用<a target="_blank" rel="noopener" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">知识共享署名-非商业性使用-禁止演绎 4.0 国际许可协议</a>进行许可。</p>
 </div>
         </div>
         
@@ -383,7 +362,7 @@
     <script type="text/javascript">
         $(()=>{
             new QRCode("wechat-qr", {
-                text: "https://tthac09.github.io/2024/03/28/london-travels-4/",
+                text: "https://tthac09.github.io/2024/05/08/key-luogu-P10261/",
                 width: 150,
                 height: 150,
                 correctLevel : QRCode.CorrectLevel.H
@@ -395,10 +374,12 @@
             const qzoneBase     = "https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?";
             const facebookBase  = "https://www.facebook.com/sharer/sharer.php?";
             const twitterBase   = "https://twitter.com/intent/tweet?";
-            const hostUrl       = "https://tthac09.github.io/2024/03/28/london-travels-4/";
-            const title         = "「【泰晤士明信片 · 第肆章】IC魔力转圈圈」";
-            const excerpt       = `一些拖更的解释（bushi）新年好呀！
-如果没猜错的话，到这章（第4章）发出来为止，第三章应该还没写完（手动狗头）。真不是我故意拖更，本来有打算引用很多 LTM 档案里的老照片和文物资料的，但是 LTM 工作流程实在是太繁琐，按我的需...`;
+            const hostUrl       = "https://tthac09.github.io/2024/05/08/key-luogu-P10261/";
+            const title         = "「【题解】 洛谷P10261 [COCI2023/2024 \#4] Trokut」";
+            const excerpt       = `题目链接 传送门
+洛谷题解 传送门一些碎碎念被迫中断更新写篇题解。
+写完这题突然开始喜欢上 COCI 了，他们家的题目挺有意思的。
+题意给定正 $N$ 边形顶点，每次操作取两个点连接，并要求连线不与已有连线相交（顶点可以相同），连出三...`;
             let _URL;
             switch (dest) {
                 case "qq"       : _URL = qqBase+"url="+hostUrl+"&title="+title+"&desc=&summary="+excerpt+"&site=cxpy";     break;
@@ -417,10 +398,10 @@
             <div class="footer-tag clearfix">
                 <div class="pull-left">
                 <i class="fa fa-tags"></i>
-                    <a class="tag-none-link" href="/tags/London/" rel="tag">London</a>
+                    <a class="tag-none-link" href="/tags/COCI/" rel="tag">COCI</a>, <a class="tag-none-link" href="/tags/%E6%B4%9B%E8%B0%B7/" rel="tag">洛谷</a>
                 </div>
                 <div class="pull-date">
-                    <time datetime="2024-05-08T09:08:03.852Z" itemprop="dateModified">最后编辑：2024-05-08</time>
+                    <time datetime="2024-05-08T09:07:16.175Z" itemprop="dateModified">最后编辑：2024-05-08</time>
                 </div>
             </div>
         </footer>
@@ -429,13 +410,9 @@
         <nav class="navigation post-navigation clearfix" role="navigation">
             
             <div class="nav-previous clearfix">
-                <a title=" 【泰晤士明信片 · 第叁章】伦敦地铁史话（一）" href="/2023/12/25/london-travels-3/">&lt; 上一篇</a>
+                <a title=" 【泰晤士明信片 · 第肆章】IC魔力转圈圈" href="/2024/03/28/london-travels-4/">&lt; 上一篇</a>
             </div>
             
-            
-            <div class="nav-next clearfix">
-                <a title=" 【题解】 洛谷P10261 [COCI2023/2024 \#4] Trokut" href="/2024/05/08/key-luogu-P10261/">下一篇 &gt;</a>
-            </div>
             
         </nav>
     
@@ -447,7 +424,7 @@
         const init = () => {
             Waline.init(Object.assign({
                 el: '#w-comments',
-                path: '/2024/03/28/london-travels-4/',
+                path: '/2024/05/08/key-luogu-P10261/',
                 dark: 'html[data-theme="dark"]',
                 locale : {
                     mail: '邮箱',
@@ -534,7 +511,7 @@
         <span class="toc-progress-bar" role="progressbar" aria-label="阅读进度："></span>
     </h4>
     <div class="textwidget">
-        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%80%E4%BA%9B%E6%8B%96%E6%9B%B4%E7%9A%84%E8%A7%A3%E9%87%8A%EF%BC%88bushi%EF%BC%89"><span class="toc-text">一些拖更的解释（bushi）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%8E%BB%E7%92%83%E7%9B%92%E5%AD%90"><span class="toc-text">玻璃盒子</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#20%E5%B2%81%E7%9A%84%E4%B8%BB%E5%85%A5%E5%8F%A3"><span class="toc-text">20岁的主入口</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A5%B3%E7%8E%8B%E5%A1%94%EF%BC%9F%E8%84%9A%E6%89%8B%E6%9E%B6%EF%BC%81"><span class="toc-text">女王塔？脚手架！</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%A3%9F%E5%9C%A8IC"><span class="toc-text">食在IC</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B4%9B%E8%B0%B7%E9%A2%98%E8%A7%A3-%E4%BC%A0%E9%80%81%E9%97%A8"><span class="toc-text">洛谷题解 传送门</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%80%E4%BA%9B%E7%A2%8E%E7%A2%8E%E5%BF%B5"><span class="toc-text">一些碎碎念</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%A2%98%E6%84%8F"><span class="toc-text">题意</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%86%E6%9E%90"><span class="toc-text">分析</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BB%A3%E7%A0%81"><span class="toc-text">代码</span></a></li></ol></li></ol>
     </div>
 </aside>
                 
