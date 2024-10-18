@@ -1,0 +1,1 @@
+cwebp IMG_1071.JPEG -o test.webp
